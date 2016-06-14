@@ -99,7 +99,7 @@ header .logo {
 
 /*footer*/
 footer {
-  border-top: 5px solid #000;
+  border-top: 3px solid #000;
   padding: 80px 50px 10px 50px;
 }
 footer h5 {
@@ -180,7 +180,8 @@ footer .payment img {
 .point-section .sec {
   position: relative;
 }
-.point-section .sec .filter {
+/*filter*/
+.filter {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -194,20 +195,22 @@ footer .payment img {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.point-section .sec .filter:hover {
+.filter:hover {
   opacity: 0.5;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.point-section .sec .filter .tag {
+.filter .tag {
   width: 150px;
   padding: 5px;
   text-align: center;
   margin: 70% auto;
   color: #fff;
   border: 1px solid #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 /*shop*/
@@ -442,6 +445,7 @@ footer .payment img {
   background: url('../images/icon-bag-black.png') no-repeat;
   padding: 5px 5px 5px 25px;
   font-weight: 400;
+  cursor: pointer;
 }
 .shop-the-story .switch span:hover {
   background: url('../images/icon-bag-violet.png') no-repeat;
@@ -453,7 +457,7 @@ footer .payment img {
 
 .slider {
   width: 100%;
-  margin: 30px auto;
+  margin: 36px auto;
 }
 .slick-list {
   height: 115px;
@@ -484,7 +488,107 @@ footer .payment img {
 /*comment*/
 .comment-wrap {
   margin: 20px 0px;
-  border-bottom: 5px solid #000;
+  border-bottom: 3px solid #000;
+}
+
+/*this weeks best*/
+.this-weeks-best {
+  border: 1px solid #999;
+  border-bottom: 3px solid #000;
+  margin-top: 50px;
+}
+.side-title {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #999;
+  font-size: 30px;
+}
+.this-weeks-best .best {
+  border-bottom: 1px solid #999;
+  width:100%;
+  padding-bottom:50%;
+  height:0px;
+}
+.this-weeks-best .cover {
+  width: 50%;
+  display: inline-block;
+}
+.this-weeks-best .cover a {
+  width:100%;
+  padding-bottom:100%;
+  height:0px;
+  display: block;
+  position: relative;
+}
+.this-weeks-best .text {
+  width: calc( 50% - 8px);
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+.this-weeks-best .filter {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+.this-weeks-best .filter .tag {
+  width: 50%;
+  margin-top: calc( 50% - 16px);
+}
+.news-letter {
+  text-align: center;
+  border: 1px solid #999;
+  border-bottom: 3px solid #000;
+  margin-top: 30px;
+  padding: 30px 20px;
+}
+.news-letter .text {
+  margin: 20px 0px 30px 0px;
+  line-height: 28px;
+}
+.fb-page-plugin {
+  border: 1px solid #999;
+  border-bottom: 3px solid #000;
+  margin-top: 30px;
+}
+.whats-hot-now {
+  border: 1px solid #999;
+  border-bottom: 3px solid #000;
+  margin-top: 50px;
+}
+.whats-hot-now .hot {
+  border-bottom: 1px solid #999;
+  width:100%;
+  padding-bottom:50%;
+  height:0px;
+}
+.whats-hot-now .cover {
+  width: 50%;
+  float: left;
+  padding-bottom:50%;
+  height:0px;
+  position: relative;
+}
+.whats-hot-now .cover:first-child {
+  border-right: 1px solid #999;
+}
+.whats-hot-now .cover a {
+  width:100%;
+  padding-bottom:100%;
+  height:0px;
+  display: block;
+  -webkit-box-shadow: inset 0 0 0 7px white;
+  -moz-box-shadow: inset 0 0 0 7px white;
+  box-shadow: inset 0 0 0 7px white;
+}
+.whats-hot-now .filter {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+.whats-hot-now .filter .tag {
+  width: 50%;
+  margin-top: calc( 50% - 16px);
 }
 
 /*botton style*/
