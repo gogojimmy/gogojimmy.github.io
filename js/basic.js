@@ -4,10 +4,37 @@ $( document ).ready(function() {
   $("a").focus(function(){
     $(this).blur();
   });
+
+  //navbar hover
+  var _showTab = 0;
+  $('.abgne_tab').mouseenter(function() {
+    var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+    $($defaultLi.find('a').attr('data')).siblings().hide();
+  });
+
+  // 當 li 頁籤被點擊時...
+  $('ul.tabs li').mouseenter(function() {
+    // 找出 li 中的超連結 href(#id)
+    var $this = $(this),
+      _clickTab = $this.find('a').attr('data');
+    // 把目前點擊到的 li 頁籤加上 .active
+    // 並把兄弟元素中有 .active 的都移除 class
+    $this.addClass('active').siblings('.active').removeClass('active');
+    // 淡入相對應的內容並隱藏兄弟元素
+    $(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+    return false;
+  });
+  $('.abgne_tab').mouseleave(function() {
+    var $this = $(this);
+    $this.find('.active').removeClass('active');
+  });
+
   //search click show
   $( ".show-search" ).click(function() {
     $( ".search-form" ).show( "slide");
   });
+
   //back to top
   $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -23,6 +50,7 @@ $( document ).ready(function() {
         }, 600);
         return false;
   });
+
   //shop the story
   $('.toggle-wrap').hide();
   $('span.reveal').click(function(){
@@ -37,6 +65,7 @@ $( document ).ready(function() {
       return false;
   });
   $("a[href='" + window.location.hash + "']").parent(".reveal").click();
+
   //gallery
   $('.responsive').slick({
             dots: false,
@@ -73,5 +102,117 @@ $( document ).ready(function() {
               // instead of a settings object
             ]
   });
+  //購物車數量加減
+  $('.btn-number').click(function(e){
+      e.preventDefault();
+
+      fieldName = $(this).attr('data-field');
+      type      = $(this).attr('data-type');
+      var input = $("input[name='"+fieldName+"']");
+      var currentVal = parseInt(input.val());
+      if (!isNaN(currentVal)) {
+          if(type == 'minus') {
+
+              if(currentVal > input.attr('min')) {
+                  input.val(currentVal - 1).change();
+              }
+              if(parseInt(input.val()) == input.attr('min')) {
+                  $(this).attr('disabled', true);
+              }
+
+          } else if(type == 'plus') {
+
+              if(currentVal < input.attr('max')) {
+                  input.val(currentVal + 1).change();
+              }
+              if(parseInt(input.val()) == input.attr('max')) {
+                  $(this).attr('disabled', true);
+              }
+
+          }
+      } else {
+          input.val(0);
+      }
+  });
+  $('.input-number').focusin(function(){
+     $(this).data('oldValue', $(this).val());
+  });
+  $('.input-number').change(function() {
+
+      minValue =  parseInt($(this).attr('min'));
+      maxValue =  parseInt($(this).attr('max'));
+      valueCurrent = parseInt($(this).val());
+
+      name = $(this).attr('name');
+      if(valueCurrent >= minValue) {
+          $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+      } else {
+          alert('Sorry, the minimum value was reached');
+          $(this).val($(this).data('oldValue'));
+      }
+      if(valueCurrent <= maxValue) {
+          $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+      } else {
+          alert('Sorry, the maximum value was reached');
+          $(this).val($(this).data('oldValue'));
+      }
+
+
+  });
+  $(".input-number").keydown(function (e) {
+          // Allow: backspace, delete, tab, escape, enter and .
+          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+               // Allow: Ctrl+A
+              (e.keyCode == 65 && e.ctrlKey === true) ||
+               // Allow: home, end, left, right
+              (e.keyCode >= 35 && e.keyCode <= 39)) {
+                   // let it happen, don't do anything
+                   return;
+          }
+          // Ensure that it is a number and stop the keypress
+          if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+              e.preventDefault();
+          }
+  });
+  //購物車details
+      $(document).ready(function () {
+          $(".btn-select").each(function (e) {
+              var value = $(this).find("ul li.selected").html();
+              if (value != undefined) {
+                  $(this).find(".btn-select-input").val(value);
+                  $(this).find(".btn-select-value").html(value);
+              }
+          });
+      });
+
+      $(document).on('click', '.btn-select', function (e) {
+          e.preventDefault();
+          var ul = $(this).find("ul");
+          if ($(this).hasClass("active")) {
+              if (ul.find("li").is(e.target)) {
+                  var target = $(e.target);
+                  target.addClass("selected").siblings().removeClass("selected");
+                  var value = target.html();
+                  $(this).find(".btn-select-input").val(value);
+                  $(this).find(".btn-select-value").html(value);
+              }
+              ul.hide();
+              $(this).removeClass("active");
+          }
+          else {
+              $('.btn-select').not(this).each(function () {
+                  $(this).removeClass("active").find("ul").hide();
+              });
+              ul.slideDown(300);
+              $(this).addClass("active");
+          }
+      });
+
+      $(document).on('click', function (e) {
+          var target = $(e.target).closest(".btn-select");
+          if (!target.length) {
+              $(".btn-select").removeClass("active").find("ul").hide();
+          }
+      });
 
 });
