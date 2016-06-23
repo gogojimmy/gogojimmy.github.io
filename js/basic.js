@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  //tooltip
+  $('[data-toggle="popover"]').popover()
 
   //remove link dotted border
   $("a").focus(function(){
@@ -214,5 +216,15 @@ $( document ).ready(function() {
               $(".btn-select").removeClass("active").find("ul").hide();
           }
       });
+
+      $('.checkInp input:checkbox').on('click', function(e) {
+
+    // prevents the event from bubbling up the DOM tree
+    // eg the modal from cancelling the event
+    e.stopImmediatePropagation();
+
+    var checked = (e.currentTarget.checked) ? false : true;
+    e.currentTarget.checked=(checked) ? false : checked.toString();
+});
 
 });
