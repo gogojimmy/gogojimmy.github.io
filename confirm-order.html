@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VIOLET WHITE-確認訂單</title>
+<!-- css -->
+<link rel="StyleSheet" type="text/css" href="css/bootstrap.css" />
+<link rel="StyleSheet" type="text/css" href="css/bootstrap-theme.css" />
+<!-- google font -->
+<link href='https://fonts.googleapis.com/css?family=Arapey:400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
+<!-- swiper css -->
+<link rel="StyleSheet" href="css/swiper.min.css" />
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/basic.js"></script>
+<!-- slick gallery css&js -->
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!--Start Fb Like Script-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--End Fb Like Script-->
+
+<div class="cart-container">
+  <!-- Body Container -->
+  <div id="container">
+    <!-- Start Header -->
+    <header class="clearfix">
+      <!-- Start Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <span class="text-arapey text-violet">Take a chance on happiness.</span>
+            </div>
+            <div class="col-md-4 sign-fav-cart">
+              <span class="sign-in text-arapey"><a href="#">Join</a> | <a href="#">Sign in</a></span>
+              <span class="fav-cart"><a class="nav-fav" href="#">0</a><a class="nav-cart" href="cart.html">0</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
+      <!-- Start  Logo & Naviagtion  -->
+      <div class="logo">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img alt="VIOLET WHITE" src="images/logo.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-default navbar-top">
+        <div class="container">
+          <div class="navbar-collapse collapse">
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-left text-arapey">
+              <li>
+                <a href="shop.html">SHOP</a>
+              </li>
+              <li>
+                <a href="new-in.html">NEW IN</a>
+              </li>
+              <li>
+                <a href="must-have.html">MUST HAVE</a>
+              </li>
+              <li>
+                <a href="sale.html">SALE</a>
+              </li>
+              <li>
+                <a href="blog.html">STORIES</a>
+              </li>
+              </li>
+            </ul>
+            <!-- End Navigation List -->
+            <!-- Stat Search -->
+            <div class="search-side">
+              <a class="show-search"><img src="images/icon-magnifier-solid.png"></a>
+              <div class="search-form" style="display: none;">
+                <form autocomplete="on" role="search" method="get" class="searchform" action="#">
+                    <input class="form-control text-arapey" type="text" placeholder="Search">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- End Search -->
+          </div>
+        </div>
+      </div>
+      <!-- End Header Logo & Naviagtion -->
+      </header>
+    <!-- End Header -->
+
+    <!-- Start Cart list -->
+    <div class="cart-list both-spacing">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-lg-8 col-md-8 ">
+            <h1 class="text-arapey">CONFIRM ORDER</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="stepwizard col-sm-12 col-lg-12 col-md-12 col-md-offset-3">
+            <div class="stepwizard-row setup-panel">
+              <div class="stepwizard-step">
+                <a class="btn btn-circle btn-primary" type="button" href="#">1</a>
+                <p>查看購物車</p>
+              </div>
+              <div class="stepwizard-step">
+                <a class="btn btn-circle btn-primary" type="button" href="#">2</a>
+                <p>確認訂單</p>
+              </div>
+              <div class="stepwizard-step">
+                <a disabled="disabled" class="btn btn-circle btn-default" type="button" href="#">3</a>
+                <p>付款方式</p>
+              </div>
+              <div class="stepwizard-step">
+                <a disabled="disabled" class="btn btn-circle btn-default" type="button" href="#">4</a>
+                <p>付款成功</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="shipping-info col-sm-6 col-lg-6 col-md-6">
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-member">訂購資訊</span><span class="small">購買及運送資訊將會寄至訂購人信箱</span>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              訂購人姓名
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" id="name" name="name">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              連絡電話
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" id="name" name="name">
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              連絡信箱
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" id="name" name="name">
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              <div class="checkbox checkbox-default both-spacing-sm">
+                <input id="checkbox1" class="styled" type="checkbox">
+                <label class="glyphicon-ok" for="checkbox1"> 同意將此次訂購資訊升級為Violet White會員</label>
+              </div>
+              <div class="checkbox checkbox-default both-spacing-sm">
+                <input id="checkbox2" class="styled" type="checkbox">
+                <label class="glyphicon-ok" for="checkbox2"> 我同意接受Violet White<a href="#"><u>服務條款</u></a>和<a href="#"><u>隱私權政策</u></a></label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6 top-spacing">
+              <span class="title-car">寄送資訊</span>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6 top-spacing bottom-spacing-sm text-right">
+              <div class="checkbox checkbox-default">
+                <input id="checkbox3" class="styled" type="checkbox">
+                <label class="glyphicon-ok" for="checkbox3"> 與訂購人相同</label>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              收件人姓名
+              <div class="form-group">
+                <input type="text" class="form-control input-lg">
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              連絡電話
+              <div class="form-group">
+                <input type="text" class="form-control input-lg">
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              國家
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value"></span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li>美國</li>
+                      <li>台灣</li>
+                      <li>英國</li>
+                  </ul>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              城市
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value"></span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li>台北市</li>
+                      <li>新北市</li>
+                  </ul>
+              </a>
+            </div>
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              區
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value"></span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li>台北市</li>
+                      <li>新北市</li>
+                  </ul>
+              </a>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              詳細地址
+              <div class="form-group">
+                <input type="text" class="form-control input-lg">
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              <div class="form-group">
+                <button class="btn btn-default btn-lg btn-block" type="submit">確認收件資料</button>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 top-spacing bottom-spacing-sm">
+              <span class="title-file2">發票資訊</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="電子發票" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value"></span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li class="selected">電子發票</li>
+                      <li>三聯式發票</li>
+                  </ul>
+              </a>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              訂單備註
+              <div class="form-group">
+                <textarea required="" class="form-control" name="" id=""></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              <button class="btn btn-default btn-prev top-spacing" type="submit">回購物車</button>
+            </div>
+          </div>
+          <div class="order-details col-sm-6 col-lg-6 col-md-6">
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-file1">訂單明細</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-center">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-sm-3 col-md-3">
+                      <div class="media">
+                        <a class="cover pull-left" href="#">
+                          <img class="media-object" src="images/shop-the-story-list-img1.png">
+                        </a>
+                        <div class="media-body">
+                          <a href="#">水晶，玻璃，鍍金項鍊</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      1
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      NT$988
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-sm-3 col-md-3">
+                      <div class="media">
+                        <a class="cover pull-left" href="#">
+                          <img class="media-object" src="images/shop-the-story-list-img1.png">
+                        </a>
+                        <div class="media-body">
+                          <a href="#">水晶，玻璃，鍍金項鍊</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      1
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      NT$988
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-sm-3 col-md-3">
+                      <div class="media">
+                        <a class="cover pull-left" href="#">
+                          <img class="media-object" src="images/shop-the-story-list-img1.png">
+                        </a>
+                        <div class="media-body">
+                          <a href="#">水晶，玻璃，鍍金項鍊</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      1
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      NT$988
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-boderbtm-grey text-block">請選擇折扣方式</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="radio radio-primary pull-left">
+                <input type="radio" name="radio1" id="radio1" value="option1">
+                <label for="radio1">
+                  我有折扣優惠碼
+                </label>
+              </div>
+              <div class="input-group pull-left">
+                <input type="text" class="form-control" placeholder="ENTER" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">使用</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="radio radio-primary pull-left">
+                <input type="radio" name="radio1" id="radio2" value="option2">
+                <label for="radio2">
+                  會員禮物金
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="vw-points btn btn-primary btn-block">
+                您這次消費可累積 100 VW Points. <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <div class="popover top">
+                  <div class="arrow"></div>
+                  <h3 class="popover-title text-arapey">WHAT ARE VW POINTS?</h3>
+                  <div class="popover-content"> <p>您在VIOLET WHITE的每筆消費金額都將回饋1%(含稅100元等於1點)的點數。１點相當於１元的價值，可累積至下次訂購時當作現金折抵使用。
+                  <br><u>Learn More</u></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="total-details col-sm-12 col-lg-12 col-md-12 top-spacing">
+              <div class="col-sm-6 col-lg-6 col-md-6">
+                商品小計
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+                NT$ 3952
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6">
+                折扣金額
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+                優惠碼折扣 - NT$ 100
+              </div>
+              <div class="last-col col-sm-6 col-lg-6 col-md-6">
+                運費 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              </div>
+              <div class="last-col col-sm-6 col-lg-6 col-md-6 text-right">
+                滿額免運
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing top-spacing-sm">
+              <div class="col-sm-6 col-lg-6 col-md-6">
+                <strong>Total</strong>
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+                <strong>NT$ 3852</strong>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 text-right">
+              <a href="payment-method.html" class="btn btn-default btn-next">去結帳了</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Cart list -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12">
+            <img src="images/logo-round.png">
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <h5>關於我們</h5>
+            <ul>
+              <li>品牌故事</li>
+              <li>優惠活動</li>
+              <li>購物金回饋計畫</li>
+              <li>夥伴合作計畫</li>
+              <li>服務條款</li>
+              <li>隱私聲明</li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-xs-12">
+            <h5>客戶服務</h5>
+            <ul>
+              <li>常見問題</li>
+              <li>尺寸指南</li>
+              <li>聯繫我們</li>
+              <li>追蹤訂單</li>
+              <li>國際運送</li>
+            </ul>
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <h4 class="text-arapey">Connect with Us!</h4>
+            <div class="input-group">
+              <input type="text" aria-describedby="basic-addon2" placeholder="輸入email 即刻領取$100購物金" class="form-control">
+              <span id="basic-addon2" class="input-group-addon">SIGN UP</span>
+            </div>
+            <div class="social-group">
+              <img src="images/icon-fb-black.png">
+              <img src="images/icon-plurk-black.png">
+              <img src="images/icon-ig-black.png">
+              <img src="images/icon-s-black.png">
+              <img src="images/icon-mail-black.png">
+            </div>
+            <div class="shipping-statement">
+              7天內免費退換貨
+              <br>開館期間免運費
+              <br>超商取貨
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="payment-copyright">
+            <div class="payment">
+              <img src="images/icon-visa-black.png">
+              <img src="images/icon-master-black.png">
+              <img src="images/icon-paypal-black.png">
+              <img src="images/icon-ibon-black.png">
+              <img src="images/icon-atm-black.png">
+            </div>
+            <div class="copyright text-arapey">
+              Take a chance on happiness. © 2016 Violet White Inc. All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="to-top">
+        <a href="#" class="scrollup">
+          <img src="images/icon-backtop-solid.png"></a>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  <!-- End Body Container -->
+  </div>
+</div>
+</body>
+</html>
