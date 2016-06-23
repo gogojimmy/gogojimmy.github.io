@@ -14,6 +14,7 @@
 <link rel="StyleSheet" href="css/swiper.min.css" />
 <!-- js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="js/basic.js"></script>
 </head>
 <body>
@@ -31,7 +32,7 @@
             </div>
             <div class="col-md-4 sign-fav-cart">
               <span class="sign-in text-arapey"><a href="#">Join</a> | <a href="#">Sign in</a></span>
-              <span class="fav-cart"><a class="nav-fav" href="#">0</a><a class="nav-cart" href="#">0</a></span>
+              <span class="fav-cart"><a class="nav-fav" href="#">0</a><a class="nav-cart" href="cart.html">0</a></span>
             </div>
           </div>
         </div>
@@ -48,25 +49,25 @@
           </div>
         </div>
       </div>
-      <div class="navbar navbar-default navbar-top">
+      <div class="navbar navbar-default navbar-top abgne_tab">
         <div class="container">
           <div class="navbar-collapse collapse">
             <!-- Start Navigation List -->
-            <ul class="nav navbar-nav navbar-left text-arapey">
-              <li>
-                <a class="active" href="shop.html">SHOP</a>
+            <ul class="nav navbar-nav navbar-left text-arapey tabs">
+              <li class="active">
+                <a data="#tab1" href="shop.html">SHOP</a>
               </li>
               <li>
-                <a href="new-in.html">NEW IN</a>
+                <a data="#tab2" href="new-in.html">NEW IN</a>
               </li>
               <li>
-                <a href="must-have.html">MUST HAVE</a>
+                <a data="#tab3" href="must-have.html">MUST HAVE</a>
               </li>
               <li>
-                <a href="sale.html">SALE</a>
+                <a data="#tab4" href="sale.html">SALE</a>
               </li>
               <li>
-                <a href="blog.html">STORIES</a>
+                <a data="#tab5" href="blog.html">STORIES</a>
               </li>
               </li>
             </ul>
@@ -84,14 +85,39 @@
             <!-- End Search -->
           </div>
           <!-- Start Sub Menu -->
-          <div class="sub-menu">
-            <div class="container">
+          <div class="sub-menu tab_container">
+            <div id="tab1" class="container">
               <ul class="nav navbar-nav navbar-left">
                 <li><a href="#">全部商品</a></li>
                 <li><a href="#">項鍊</a></li>
                 <li><a href="#">戒指</a></li>
                 <li><a href="#">耳環</a></li>
                 <li><a href="#">手環</a></li>
+              </ul>
+            </div>
+            <div id="tab2" class="container">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">最新上架</a></li>
+                <li><a href="#">熱賣館</a></li>
+                <li><a href="#">情人節專區</a></li>
+              </ul>
+            </div>
+            <div id="tab3" class="container">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">流蘇熱潮</a></li>
+                <li><a href="#">天然原石</a></li>
+                <li><a href="#">皮感系列</a></li>
+                <li><a href="#">極線戒指</a></li>
+              </ul>
+            </div>
+            <div id="tab4" class="container">
+            </div>
+            <div id="tab5" class="container">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">流蘇熱潮</a></li>
+                <li><a href="#">天然原石</a></li>
+                <li><a href="#">皮感系列</a></li>
+                <li><a href="#">極線戒指</a></li>
               </ul>
             </div>
           </div>
