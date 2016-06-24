@@ -1,4 +1,36 @@
 $( document ).ready(function() {
+  //menu fix
+  var $menu = $('.navbar'),
+    $logo = $('.logo'),
+    _logo = $logo.offset().top;
+    _top = $menu.offset().top;
+  var $win = $(window).scroll(function(){
+    if($win.scrollTop() >= _logo){
+      if($menu.css('position')!='fixed'){
+        $menu.css({
+          position: 'fixed',
+          top: 65,
+          zIndex: 999,
+          background: '#fff',
+          width: '100%'
+        });
+        $('span.take-chance').fadeOut('fast').promise().done(function(logo) {
+          $('span.take-chance span').replaceWith( "<span><img class='logo-white' src='images/logo-white.png'></span>" );
+          $('span.take-chance').fadeIn('fast');
+        });
+      }
+    }else{
+      $menu.css({
+        position: 'relative',
+        top: 0
+      });
+        $('span.take-chance').fadeOut('fast').promise().done(function(logo) {
+          $('span.take-chance img').replaceWith( "Take a chance on happiness." );
+          $('span.take-chance').fadeIn('fast');
+        });
+    }
+  });
+
   //tooltip
   $('[data-toggle="popover"]').popover()
 
@@ -14,15 +46,10 @@ $( document ).ready(function() {
     $($defaultLi.find('a').attr('data')).siblings().hide();
   });
 
-  // 當 li 頁籤被點擊時...
   $('ul.tabs li').mouseenter(function() {
-    // 找出 li 中的超連結 href(#id)
     var $this = $(this),
       _clickTab = $this.find('a').attr('data');
-    // 把目前點擊到的 li 頁籤加上 .active
-    // 並把兄弟元素中有 .active 的都移除 class
     $this.addClass('active').siblings('.active').removeClass('active');
-    // 淡入相對應的內容並隱藏兄弟元素
     $(_clickTab).stop(false, true).fadeIn().siblings().hide();
 
     return false;
