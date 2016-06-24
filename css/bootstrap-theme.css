@@ -255,6 +255,10 @@ footer .payment img {
 .point-section .sec {
   position: relative;
 }
+.point-section .filter {
+  margin: 0px 15px;
+}
+
 /*filter*/
 .filter {
   position: absolute;
@@ -262,7 +266,6 @@ footer .payment img {
   left: 0px;
   width: calc(100% - 30px);
   height: 100%;
-  margin: 0px 15px;
   background: #000;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -408,6 +411,9 @@ footer .payment img {
   width: 50%;
   height: 500px;
 }
+.stories1 .filter {
+  width: 50%;
+}
 .stories1 .text-wrap {
   float: left;
   width: 40%;
@@ -424,6 +430,9 @@ footer .payment img {
   float: left;
   width: 50%;
   height: 250px;
+}
+.stories2 .filter {
+  width: 50%;
 }
 .stories2 .text-wrap {
   float: left;
@@ -443,6 +452,9 @@ footer .payment img {
   width: 50%;
   height: 250px;
 }
+.stories3 .filter {
+  width: 50%;
+}
 .stories3 .text-wrap {
   float: left;
   width: 50%;
@@ -459,6 +471,12 @@ footer .payment img {
   float: right;
   width: 50%;
   height: 500px;
+  position: relative;
+}
+.stories4 .filter {
+  width: 100%;
+  position: absolute;
+  right: 0px;
 }
 .stories4 .text-wrap {
   position: absolute;
@@ -474,6 +492,7 @@ footer .payment img {
   position: absolute;
   top: 20px;
   right: 50%;
+  z-index: 9;
 }
 .stories4 .triangle {
   border-style: solid;
@@ -481,7 +500,8 @@ footer .payment img {
   border-color: transparent transparent transparent #fff;
   position: absolute;
   bottom: 20px;
-  left: 50%;
+  left: 0;
+  z-index: 9;
 }
 
 /*stories page*/
@@ -795,6 +815,17 @@ footer .payment img {
   padding-right: 15px;
   color: #40e0d0;
   font-size: 90%;
+}
+
+/*hover zoom*/
+.hover-zoom {
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.hover-zoom:hover {
+  background-size: 110% !important;
 }
 
 /*title style*/
