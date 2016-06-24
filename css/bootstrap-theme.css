@@ -223,6 +223,9 @@ footer .payment img {
 .swiper-slide img {
   width: 100%;
 }
+.swiper-slide a {
+  color: #fff;
+}
 .swiper-title {
   position: absolute;
   bottom: 220px;
@@ -275,6 +278,7 @@ footer .payment img {
   transition: all 0.5s ease-in-out;
 }
 .filter .tag {
+  display: block;
   width: 150px;
   padding: 5px;
   text-align: center;
@@ -432,6 +436,7 @@ footer .payment img {
   left: 0px;
   width: 50%;
   height: 250px;
+  z-index: 9;
 }
 .stories3 .cover {
   float: left;
@@ -532,7 +537,6 @@ footer .payment img {
 .shop-the-story-list {
   display: none;
 }
-
 .slider {
   width: 100%;
   margin: 36px auto;
@@ -783,6 +787,14 @@ footer .payment img {
 .order-info, .payment-container .order-details {
   border-top: 1px solid #999;
   padding-top: 30px;
+}
+
+/*wish list*/
+.out-stock a {
+  background: url("../images/icon-bell-green.png") no-repeat right center;
+  padding-right: 15px;
+  color: #40e0d0;
+  font-size: 90%;
 }
 
 /*title style*/
