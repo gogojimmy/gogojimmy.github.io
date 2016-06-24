@@ -67,6 +67,15 @@ mark {
   color: #000;
   background: #ff0;
 }
+.more-large {
+  font-size: 170%;
+}
+.large {
+  font-size: 150%;
+}
+.medium {
+  font-size: 120%;
+}
 small {
   font-size: 80%;
 }
@@ -6433,6 +6442,7 @@ button.close {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  float: none !important;
 }
 .pull-right {
   float: right !important;
