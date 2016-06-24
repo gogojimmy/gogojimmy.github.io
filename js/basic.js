@@ -15,7 +15,7 @@ $( document ).ready(function() {
           width: '100%'
         });
         $('span.take-chance').fadeOut('fast').promise().done(function(logo) {
-          $('span.take-chance span').replaceWith( "<span><img class='logo-white' src='images/logo-white.png'></span>" );
+          $('span.take-chance span').replaceWith( "<span><a href='index.html'><img class='logo-white' src='images/logo-white.png'></a></span>" );
           $('span.take-chance').fadeIn('fast');
         });
       }
