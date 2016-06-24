@@ -25,7 +25,7 @@ $( document ).ready(function() {
         top: 0
       });
         $('span.take-chance').fadeOut('fast').promise().done(function(logo) {
-          $('span.take-chance img').replaceWith( "Take a chance on happiness." );
+          $('span.take-chance a').replaceWith( "Take a chance on happiness." );
           $('span.take-chance').fadeIn('fast');
         });
     }
