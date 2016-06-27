@@ -129,9 +129,6 @@ header .logo {
   font-weight: bold;
   border-bottom: 5px solid #ee82ee;
 }
-.sub-menu {
-  border-top: 1px solid #ee82ee;
-}
 .sub-menu .nav li {
   margin: 5px 0px;
 }
@@ -148,22 +145,10 @@ header .logo {
   display: none;
 }
 .abgne_tab:hover .tab_container {
-  display: block;
+  /*display: block;*/
 }
 .abgne_tab .tab_container .container {
   display: none;
-}
-.shop-container .abgne_tab .tab_container {
-  display: block;
-}
-.shop-container .abgne_tab .tab_container #tab1 {
-  display: block;
-}
-.blog-container .abgne_tab .tab_container {
-  display: block;
-}
-.blog-container .abgne_tab .tab_container #tab5 {
-  display: block;
 }
 
 /*footer*/
@@ -810,11 +795,36 @@ footer .payment img {
 }
 
 /*wish list*/
+.out-stock {
+  position: relative;
+}
 .out-stock a {
   background: url("../images/icon-bell-green.png") no-repeat right center;
   padding-right: 15px;
   color: #40e0d0;
   font-size: 90%;
+  cursor: pointer;
+}
+.out-stock .popover {
+  display: none;
+  color: #000;
+  position: absolute;
+  right: 32px !important;
+  left: auto;
+  top: 35px;
+  margin-top: -7px;
+  padding: 0px;
+  max-width: 250px;
+  width: 250px;
+}
+.out-stock:hover .popover {
+  display: block;
+}
+.out-stock .popover-content {
+  padding: 0px;
+}
+.out-stock .form-control {
+  border: none;
 }
 
 /*hover zoom*/
