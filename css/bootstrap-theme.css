@@ -756,6 +756,9 @@ footer .payment img {
 }
 
 /*order details*/
+.add-shipping-info {
+  cursor: pointer;
+}
 .order-details thead {
   border-bottom: 2px solid #ddd;
 }
@@ -1491,6 +1494,7 @@ fieldset[disabled] .btn-danger {
 }
 .btn-white:hover {
   background-color: #ee82ee;
+  color: #fff;
   background-size: 25px 20px;
   border: 2px solid #ee82ee;
 }
@@ -1588,6 +1592,7 @@ fieldset[disabled] .btn-success.active {
 .btn-warning:hover,
 .btn-warning:focus {
   background-color: #ee82ee;
+  border-color: #ee82ee;
   background-position: 0 -15px;
 }
 .btn-warning:active,
