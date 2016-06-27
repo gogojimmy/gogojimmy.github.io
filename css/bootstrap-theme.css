@@ -793,6 +793,21 @@ footer .payment img {
   border-top: 1px solid #999;
   padding-top: 30px;
 }
+.cs-payment .cs {
+  position: relative;
+  display: inline-block;
+}
+.cs-payment .cs .popover {
+  display: none;
+  color: #000;
+  position: absolute;
+  left: -70px;
+  bottom: 35px;
+  margin-top: -175px;
+}
+.cs-payment .cs:hover .popover {
+  display: block;
+}
 
 /*wish list*/
 .out-stock {
