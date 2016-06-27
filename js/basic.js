@@ -39,23 +39,27 @@ $( document ).ready(function() {
     $(this).blur();
   });
 
-  //navbar hover
-  var _showTab = 0;
-  $('.abgne_tab').mouseenter(function() {
-    var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
-    $($defaultLi.find('a').attr('data')).siblings().hide();
-  });
 
+  //navbar hover
+  //var _showTab = 0;
+  //$('.abgne_tab').mouseenter(function() {
+    //var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+    //$($defaultLi.find('a').attr('data')).siblings().hide();
+  //});
   $('ul.tabs li').mouseenter(function() {
     var $this = $(this),
       _clickTab = $this.find('a').attr('data');
     $this.addClass('active').siblings('.active').removeClass('active');
     $(_clickTab).stop(false, true).fadeIn().siblings().hide();
+    $('.tab_container').css('display', 'block');
+    $('.sub-menu').css('border-top', '1px solid #ee82ee');
 
     return false;
   });
+
   $('.abgne_tab').mouseleave(function() {
     var $this = $(this);
+    $('.tab_container').css('display', 'none');
     $this.find('.active').removeClass('active');
   });
 
