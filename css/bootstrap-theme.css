@@ -778,7 +778,7 @@ footer .payment img {
   right: 50px !important;
   left: auto;
   bottom: 35px;
-  margin-top: -210px;
+  margin-top: -230px;
 }
 .vw-points:hover .popover {
   display: block;
@@ -845,6 +845,22 @@ footer .payment img {
   border: none;
 }
 
+/*join sign in*/
+.sign-in-wrap {
+  padding: 0px 30px;
+}
+.creat-account-wrap, .join-form-wrap {
+  border-left: 1px solid #000;
+  padding: 0px 30px;
+}
+.join-text {
+  line-height: 28px;
+  color: #666;
+}
+.join-form-wrap {
+  display: none;
+}
+
 /*hover zoom*/
 .hover-zoom {
   display: block;
@@ -899,7 +915,6 @@ footer .payment img {
 .btn-select {
   position: relative;
   padding: 0;
-  min-width: 150px;
   width: 100%;
   border-radius: 0;
   margin-bottom: 20px;
@@ -1481,10 +1496,12 @@ fieldset[disabled] .btn-danger {
   background-color: #000;
   padding: 10px 30px;
   border: 2px solid #000;
+  color: #fff;
 }
 .btn-black:hover {
   background-color: #ee82ee;
   border: 2px solid #ee82ee;
+  color: #fff;
 }
 .btn-white {
   background-color: #fff;
@@ -1495,8 +1512,32 @@ fieldset[disabled] .btn-danger {
 .btn-white:hover {
   background-color: #ee82ee;
   color: #fff;
-  background-size: 25px 20px;
   border: 2px solid #ee82ee;
+}
+.btn-white-thin {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 32px;
+  border: 1px solid #999;
+}
+.btn-white-thin:hover {
+  background-color: #ee82ee;
+  color: #fff;
+  padding: 12px 32px;
+  border: 1px solid #ee82ee;
+}
+
+/*btn black&white*/
+.btn-facebook {
+  background-color: #27448a;
+  padding: 10px 30px;
+  border: 2px solid #27448a;
+  color: #fff;
+}
+.btn-facebook:hover {
+  background-color: #ee82ee;
+  border: 2px solid #ee82ee;
+  color: #fff;
 }
 
 /*btn circle*/
