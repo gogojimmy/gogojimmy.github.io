@@ -281,4 +281,14 @@ $( document ).ready(function() {
     $(".join-form-wrap").show();
   });
 
+  //性別選擇效果
+  $( ".female-btn" ).click(function() {
+    $(this).addClass("active");
+    $(".male-btn").removeClass("active");
+  });
+  $( ".male-btn" ).click(function() {
+    $(this).addClass("active");
+    $(".female-btn").removeClass("active");
+  });
+
 });
