@@ -254,6 +254,11 @@ $( document ).ready(function() {
           e.currentTarget.checked=(checked) ? false : checked.toString();
       });
 
+  //升級成會員效果
+  $( ".into-member" ).click(function(){
+    $( ".password-wrap" ).toggle();
+  });
+
   //新增收貨地址效果
   if ( $( ".shipping-info-card" ).length ) {
     $(".same-with").hide();
