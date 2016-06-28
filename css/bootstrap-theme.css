@@ -787,6 +787,9 @@ footer .payment img {
   border-bottom: 2px solid #ddd;
   padding-bottom: 10px;
 }
+.password-wrap {
+  display: none;
+}
 
 /*payment successful*/
 .thank-you {
