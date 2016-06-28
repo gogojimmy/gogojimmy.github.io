@@ -33,6 +33,7 @@ $( document ).ready(function() {
 
   //tooltip
   $('[data-toggle="popover"]').popover()
+  $('[data-toggle="tooltip"]').tooltip()
 
   //remove link dotted border
   $("a").focus(function(){
@@ -272,6 +273,12 @@ $( document ).ready(function() {
     $(".same-with").hide();
     $(".shipping-info-form").hide();
     $(".add-shipping-info").show();
+  });
+
+  //加入會員效果
+  $( ".join-btn" ).click(function() {
+    $(".creat-account-wrap").hide();
+    $(".join-form-wrap").show();
   });
 
 });
