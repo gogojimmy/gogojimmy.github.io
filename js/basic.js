@@ -44,10 +44,17 @@ $( document ).ready(function() {
   $('ul.tabs li').mouseenter(function() {
     var $this = $(this),
       _clickTab = $this.find('a').attr('data');
-    $this.addClass('active').siblings('.active').removeClass('active');
-    $(_clickTab).stop(false, true).fadeIn().siblings().hide();
-    $('.tab_container').css('display', 'block');
-    $('.sub-menu').css('border-top', '1px solid #ee82ee');
+
+      if ( !$.trim( $(_clickTab).html() ).length ) {
+          $('.sub-menu').css('border-top', '0px');
+      } else {
+          $('.sub-menu').css('border-top', '1px solid #ee82ee');
+      }
+
+      $this.addClass('active').siblings('.active').removeClass('active');
+      $(_clickTab).stop(false, true).fadeIn().siblings().hide();
+      $('.tab_container').css('display', 'block');
+
 
     return false;
   });
