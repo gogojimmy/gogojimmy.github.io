@@ -1185,16 +1185,17 @@ h3,
 h4,
 h5,
 h6,
+h7,
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6,
+.h7 {
   font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
+  font-weight: normal;
+  margin: 0;
 }
 h1 small,
 h2 small,
@@ -1202,36 +1203,30 @@ h3 small,
 h4 small,
 h5 small,
 h6 small,
+h7 small,
 .h1 small,
 .h2 small,
 .h3 small,
 .h4 small,
 .h5 small,
 .h6 small,
+.h7 small,
 h1 .small,
 h2 .small,
 h3 .small,
 h4 .small,
 h5 .small,
 h6 .small,
+h7 .small,
 .h1 .small,
 .h2 .small,
 .h3 .small,
 .h4 .small,
 .h5 .small,
-.h6 .small {
+.h6 .small,
+.h7 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777;
-}
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 h1 small,
 .h1 small,
@@ -1246,15 +1241,6 @@ h2 .small,
 h3 .small,
 .h3 .small {
   font-size: 65%;
-}
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 h4 small,
 .h4 small,
@@ -1272,28 +1258,38 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 24px;
+  font-size: 38px;
+  line-height: 57px;
 }
 h2,
 .h2 {
   font-size: 30px;
+  line-height: 45px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 30px;
 }
 h4,
 .h4 {
-  font-size: 22px;
+  font-size: 16px;
+  line-height: 28.8px;
 }
 h5,
 .h5 {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  line-height: 27px;
 }
 h6,
 .h6 {
+  font-size: 14px;
+  line-height: 25.2px;
+}
+h7,
+.h7 {
   font-size: 12px;
+  line-height: 21.6px;
 }
 p {
   margin: 0 0 10px;
@@ -3870,6 +3866,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   text-align: center;
   background-color: #000;
   border: 1px solid #000;
+  cursor: pointer;
 }
 .input-group-addon.input-sm {
   padding: 5px 10px;
@@ -4132,7 +4129,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
+  top: 0px;
+  width: 100%;
+  background: #fff;
   border: 1px solid transparent;
+  z-index: 9;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -6033,7 +6034,7 @@ button.close {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1060;
+  z-index: 99;
   display: none;
   width: 180px;
   padding: 1px;

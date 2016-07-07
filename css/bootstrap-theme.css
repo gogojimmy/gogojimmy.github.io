@@ -74,6 +74,9 @@
 .top-bar .sign-fav-cart a {
   color: #fff;
 }
+.top-bar .sign-fav-cart a:hover {
+  color: #ffccff;
+}
 .top-bar .sign-in {
   margin-right: 30px;
 }
@@ -100,6 +103,7 @@ header .logo {
 .search-side {
   float: right;
   margin-top: -2px;
+  cursor: pointer;
 }
 .search-side .show-search {
   display: inline-table;
@@ -109,6 +113,7 @@ header .logo {
   width: 20px;
   padding: 9px 12px;
   vertical-align: top;
+  cursor: pointer;
 }
 .search-side .search-form {
   display: inline-table;
@@ -143,6 +148,11 @@ header .logo {
 }
 .abgne_tab .tab_container {
   display: none;
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #000;
 }
 .abgne_tab:hover .tab_container {
   /*display: block;*/
@@ -282,6 +292,9 @@ footer .payment img {
 .landing-pic .container {
   position: relative;
 }
+.landing-pic img {
+  width: 100%;
+}
 .landing-text {
   position: absolute;
   top: 0px;
@@ -324,12 +337,12 @@ footer .payment img {
 }
 
 /*Product List*/
-.product-list {
-  margin: 50px 0px;
+.must-have-container .product-list .thumbnail {
+  height: 550px;
+  border-bottom: none;
 }
 .product-list .thumbnail {
   text-align: center;
-  margin: 30px 0px;
 }
 .product-list .price {
   height: 60px;
@@ -582,7 +595,7 @@ footer .payment img {
 .this-weeks-best {
   border: 1px solid #999;
   border-bottom: 3px solid #000;
-  margin-top: 50px;
+  margin-top: 174px;
 }
 .side-title {
   padding: 20px;
@@ -867,12 +880,12 @@ footer .payment img {
 /*hover zoom*/
 .hover-zoom {
   display: block;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   overflow: hidden;
 }
 .hover-zoom:hover {
-  background-size: 110% !important;
+  background-size: 120% !important;
 }
 
 /*title style*/
