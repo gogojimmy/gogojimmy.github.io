@@ -17,6 +17,9 @@
 }
 
 /*spacing*/
+.four-spacing {
+  margin: 30px 20px;
+}
 .both-spacing {
   margin: 30px 0px;
 }
@@ -362,12 +365,9 @@ footer .payment img {
 }
 
 /*Product List*/
-.must-have-container .product-list .thumbnail {
-  height: 550px;
-  border-bottom: none;
-}
 .product-list .thumbnail {
   text-align: center;
+  overflow: hidden;
 }
 .product-list .price {
   height: 60px;
@@ -389,6 +389,12 @@ footer .payment img {
 }
 .product-list .add-fav a.added {
   background: url('../images/icon-heart-violet.png') no-repeat center center;
+}
+.must-have-container .product-list .thumbnail {
+  border-bottom: none;
+}
+.must-have-container .caption {
+  height: 120px;
 }
 
 /*stories*/
