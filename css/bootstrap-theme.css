@@ -287,6 +287,31 @@ footer .payment img {
   letter-spacing: 1px;
 }
 
+/*img zoom*/
+.img-zoom img {
+  width: 100%;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.img-zoom:hover img {
+  -moz-transform: scale(1.18);
+  -o-transform: scale(1.18);
+  -ms-transform: scale(1.18);
+  -webkit-transform: scale(1.18);
+  transform: scale(1.18);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
 /*shop*/
 /*landing picture*/
 .landing-pic .container {
@@ -376,7 +401,9 @@ footer .payment img {
   padding: 30px 0px 30px 0px;
 }
 .stories-list {
-  height: 500px;
+  width: 100%;
+  padding-bottom: 50%;
+  height: 0;
   position: relative;
 }
 .stories-item .title {
@@ -402,15 +429,15 @@ footer .payment img {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 500px;
+  padding-bottom: 50%;
+  height: 0;
 }
-.stories1 .cover {
+.stories1 .cover-wrap {
   float: left;
   width: 50%;
-  height: 500px;
-}
-.stories1 .filter {
-  width: 50%;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
 }
 .stories1 .text-wrap {
   float: left;
@@ -422,15 +449,18 @@ footer .payment img {
   bottom: 0px;
   left: 50%;
   width: 50%;
-  height: 250px;
+  padding-bottom: 25%;
+  height: 0;
 }
-.stories2 .cover {
+.stories2 .cover-wrap {
   float: left;
   width: 50%;
-  height: 250px;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
 }
-.stories2 .filter {
-  width: 50%;
+.stories2 .cover img {
+  width: 100%;
 }
 .stories2 .text-wrap {
   float: left;
@@ -442,16 +472,19 @@ footer .payment img {
   top: 0px;
   left: 0px;
   width: 50%;
-  height: 250px;
+  padding-bottom: 25%;
+  height: 0;
   z-index: 9;
 }
-.stories3 .cover {
+.stories3 .cover-wrap {
   float: left;
   width: 50%;
-  height: 250px;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
 }
-.stories3 .filter {
-  width: 50%;
+.stories3 .cover img {
+  width: 100%;
 }
 .stories3 .text-wrap {
   float: left;
@@ -463,18 +496,19 @@ footer .payment img {
   bottom: 0px;
   right: 0px;
   width: 100%;
-  height: 500px;
+  padding-bottom: 50%;
+  height: 0;
 }
-.stories4 .cover {
+.stories4 .cover-wrap {
   float: right;
   width: 50%;
-  height: 500px;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
   position: relative;
 }
-.stories4 .filter {
+.stories4 .cover img {
   width: 100%;
-  position: absolute;
-  right: 0px;
 }
 .stories4 .text-wrap {
   position: absolute;
