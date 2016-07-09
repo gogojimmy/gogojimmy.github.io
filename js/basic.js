@@ -303,4 +303,54 @@ $( document ).ready(function() {
     $(".female-btn").removeClass("active");
   });
 
+  //商品說明展開效果
+  $( ".click-more" ).click(function() {
+      var $div = $( "div.product-description" );
+      // 先取得是否有記錄在 .data('contentHeight') 中
+      var contentHeight = $div.data('contentHeight');
+
+      // 若沒有記錄
+      if(!!!contentHeight){
+        // 取得完整的高
+        contentHeight = determineActualHeight($div);
+        // 並記錄在 .data('contentHeight') 中
+        $div.data('contentHeight', contentHeight);
+      }
+        $( ".click-more" ).toggleClass( "click-more-up" );
+
+      // 進行折疊
+      $div.stop().animate({
+        height: (contentHeight == $div.height() ? 100 : contentHeight)
+      }, 500);
+  });
+
+  function determineActualHeight($div) {
+      var $clone = $div.clone().hide().css('height', 'auto').appendTo($div.parent()),
+      height = $clone.height();
+      $clone.remove();
+      return height;
+  }
+
+  //產品縮圖切換效果
+  $(function(){
+    // 先取得相關的區塊及預設要先顯示那一個
+    var $block = $('.product-detail-wrap'),
+      $link = $block.find('.thumbnail-list span'),
+      $showBox = $('.show-box'),
+      _default = 0;
+
+    // 當滑鼠移到 $link 上時
+    $link.click(function(){
+      var $this = $(this);
+
+      // 修改 $showBox 中的超連結及圖片
+      $showBox.html('<img class="img-responsive" src="'+$this.find('img').attr('src')+'" />');
+      // 幫被滑鼠移上去的 li 加上 .on
+      $this.addClass('on').siblings('.on').removeClass('on');
+    }).click(function(){
+      // 如果是點擊到 $link 時則取消連結功能
+      return false;
+    }).eq(_default).mouseover();
+  });
+
 });
