@@ -22,7 +22,7 @@
 <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<div class="shop-container">
+<div class="shop-page-container">
   <!-- Body Container -->
   <div id="container">
     <!-- Start Header -->
@@ -132,49 +132,117 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Landing Picture -->
-    <div class="landing-pic">
+    <!-- Start Bread Crumbs -->
+    <div class="bread-crumbs-wrap">
       <div class="container">
         <div class="row">
-          <img src="images/shop-landing-pic1.png" width="100%" srcset="images/shop-landing-pic1-400.png 400w, images/shop-landing-pic1-600.png 600w, images/shop-landing-pic1-1280.png 1280w">
-          <div class="landing-text">
-            <div class="title">
-              全部商品
-            </div>
-            <div class="description">
-              精選配飾讓妳簡單的穿搭更迷人外，<br>更別說它會為妳帶來的好人緣和好氣色!
-            </div>
+          <div class="col-sm-12 col-lg-12 col-md-12">
+            <ol class="breadcrumb">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+              <li><a href="shop.html">項鍊</a></li>
+              <li class="active">時尚金色項鍊</li>
+            </ol>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Landing Picture -->
+    <!-- End Bread Crumbs -->
 
-    <!-- Start List Filter -->
-    <div class="list-filter">
+    <!-- Start Product Detail -->
+    <div class="product-detail-wrap">
       <div class="container">
         <div class="row">
-          <div class="quick-link text-arapey col-sm-3 col-lg-3 col-md-3">
-            <span><a href="index.html">home</a></span>
-            <span><a href="shop.html">shop</a></span>
-            <span><a href="shop.html">all</a></span>
+          <div class="thumbnail-list col-sm-1 col-lg-1 col-md-1">
+            <span><img class="img-responsive bottom-spacing-sm" src="images/shop-page-img1.png"></span>
+            <span><img class="img-responsive bottom-spacing-sm" src="images/must-have-img1.png"></span>
           </div>
-          <div class="set-order col-sm-9 col-lg-9 col-md-9">
-            <span><a href="#">受歡迎程度</a></span>
-            <span><a href="#">最低價格</a></span>
-            <span><a href="#">最高價格</a></span>
-            <span><a href="#">新到貨品</a></span>
-            <span><a href="#">折扣</a></span>
+          <div class="show-box col-sm-6 col-lg-6 col-md-6">
+            <img class="img-responsive" src="images/shop-page-img1.png">
+          </div>
+          <div class="col-sm-3 col-lg-3 col-md-3">
+            <small>JEWEL NECESSITIES</small>
+            <br><h1><small>時尚金色項鍊</small></h1>
+            <!--一般價格時-->
+            <!--<div class="price large">
+              <span>NT$ 1980</span>
+            </div>-->
+            <!--優惠價格時-->
+            <div class="price large discount">
+              <span>NT＄1980</span> <span>NT＄999</span>
+            </div>
+            <div class="both-spacing">
+              <a class="btn btn-info btn-select btn-select-lg">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">顏色</span>
+                <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                <ul>
+                  <li>金色</li>
+                  <li>玫瑰金</li>
+                  <li>銀色</li>
+                </ul>
+              </a>
+              <a class="btn btn-info btn-select btn-select-lg">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">尺寸</span>
+                <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                <ul>
+                  <li>S</li>
+                  <li>M</li>
+                  <li>L</li>
+                </ul>
+              </a>
+              <a class="btn btn-info btn-select btn-select-lg">
+                <input type="hidden" class="btn-select-input" id="" name="" value="" />
+                <span class="btn-select-value">數量</span>
+                <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </a>
+            </div>
+            <a class="btn btn-black btn-bag-white btn-lg btn-block bottom-spacing-sm" href="#">加入購物車</a>
+            <a class="btn btn-white btn-heart-solid2 btn-lg btn-block bottom-spacing-sm" href="#">加入心願清單</a>
+            <div class="btn-lg btn-question-green btn-block bottom-spacing">
+              購買這個配飾可擁有90點
+            </div>
+            <div class="product-description">
+              <small>潘多拉金珠手環，金屬鍊飾搭配粗大黑色扣圈，加上金黑色調的花卉、圓珠、蝴蝶結、葉片不等墜飾，以及一個晶瑩剔透的玻璃心吊墜，打造難以抗拒的潘多拉的魅力。
+              <br>
+              <br>- 金屬
+              <br>- 龍蝦扣開合設計
+              <br>- 透視玻璃心吊墜
+              <br>- 金飾吊墜
+              <br>- 黑色扣圈
+              <br>
+              </small>
+            </div>
+            <div class="click-more both-spacing-sm">
+              <small>顯示更多</small>
+            </div>
+            <div class="social-icons top-spacing">
+              <a href="#" class="fb right-spacing-sm"></a>
+              <a href="#" class="pintrest right-spacing-sm"></a>
+              <a href="#" class="ig right-spacing-sm"></a>
+              <a href="#" class="mail right-spacing-sm"></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End List Filter -->
+    <!-- End Product Detail -->
 
     <!-- Start Product List -->
     <div class="product-list top-spacing">
       <div class="container">
         <div class="row">
+          <div class="col-sm-12 col-lg-12 col-md-12">
+            <h3 class="both-spacing text-arapey">
+              <u>WE THINK YOU WILL LIKE</u>
+            </h3>
+          </div>
           <div class="col-sm-3 col-lg-3 col-md-3">
             <div class="thumbnail">
               <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
@@ -215,90 +283,54 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 col-md-3">
+        </div>
+      </div>
+    </div>
+    <!-- End Product List -->
+
+    <!-- Start Recently Viewed -->
+    <div class="recently-viewed top-spacing">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-12 col-md-12">
+            <h3 class="both-spacing text-arapey">
+              <u>RECENTLY VIEWED</u>
+            </h3>
+          </div>
+          <div class="col-sm-2 col-lg-2 col-md-2">
             <div class="thumbnail">
               <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
-              <div class="caption">
-                <h5><a href="shop-page.html">時尚金色項鍊</a></h5>
-                <div class="price"><span>NT＄1980</span></div>
-                <div class="add-fav"><a href="#"></a></div>
-              </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 col-md-3">
+          <div class="col-sm-2 col-lg-2 col-md-2">
             <div class="thumbnail">
               <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
-              <div class="caption">
-                <h5><a href="shop-page.html">時尚金色項鍊</a></h5>
-                <div class="price"><span>NT＄1980</span></div>
-                <div class="add-fav"><a href="#"></a></div>
-              </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 col-md-3">
+          <div class="col-sm-2 col-lg-2 col-md-2">
             <div class="thumbnail">
               <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
-              <div class="caption">
-                <h5><a href="shop-page.html">時尚金色項鍊</a></h5>
-                <div class="price"><span>NT＄1980</span></div>
-                <div class="add-fav"><a href="#"></a></div>
-              </div>
             </div>
           </div>
-          <div class="col-sm-3 col-lg-3 col-md-3">
+          <div class="col-sm-2 col-lg-2 col-md-2">
             <div class="thumbnail">
               <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
-              <div class="caption">
-                <h5><a href="shop-page.html">時尚金色項鍊</a></h5>
-                <div class="price"><span>NT＄1980</span></div>
-                <div class="add-fav"><a href="#"></a></div>
-              </div>
+            </div>
+          </div>
+          <div class="col-sm-2 col-lg-2 col-md-2">
+            <div class="thumbnail">
+              <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
+            </div>
+          </div>
+          <div class="col-sm-2 col-lg-2 col-md-2">
+            <div class="thumbnail">
+              <a href="shop-page.html"><img alt="時尚金色項鍊" src="images/product-img1.png"></a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- End Product List -->
-
-    <!-- Start Pager -->
-    <div class="pagination-bar">
-      <div class="container">
-        <div class="row">
-          <div class="per-page text-arapey col-sm-6 col-lg-6 col-md-6">
-            view <a class="active" href="#">24</a> <a href="#">48</a> <a href="#">96</a> per page
-          </div>
-          <div class="col-sm-6 col-lg-6 col-md-6">
-            <ul class="pagination text-arapey">
-                <li>
-                  <span>page</span>
-                </li>
-                <li>
-                    <a href="#">‹</a>
-                </li>
-                <li>
-                    <a href="#">1</a>
-                </li>
-                <li class="active">
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                     <a href="#">›</a>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Pager -->
 
     <!-- Start Footer -->
     <footer>
