@@ -179,12 +179,6 @@ footer ul {
 footer li {
   margin: 5px 0px;
 }
-footer .social-group {
-  padding: 35px 0px;
-}
-footer .social-group img {
-  margin-right: 10px;
-}
 footer .shipping-statement {
   font-size: 20px;
 }
@@ -369,13 +363,13 @@ footer .payment img {
   text-align: center;
   overflow: hidden;
 }
-.product-list .price {
+.price {
   height: 60px;
 }
-.product-list .discount span:first-child {
+.discount span:first-child {
   text-decoration: line-through;
 }
-.product-list .discount span:last-child {
+.discount span:last-child {
   color: #f00;
 }
 .product-list .add-fav {
@@ -390,11 +384,71 @@ footer .payment img {
 .product-list .add-fav a.added {
   background: url('../images/icon-heart-violet.png') no-repeat center center;
 }
+.product-detail-wrap .btn img {
+  float: left;
+}
 .must-have-container .product-list .thumbnail {
   border-bottom: none;
 }
 .must-have-container .caption {
   height: 120px;
+}
+.thumbnail-list span {
+  cursor: pointer;
+}
+.product-description {
+  height: 100px;
+  overflow: hidden;
+}
+.click-more small:hover {
+  cursor: pointer;
+  color: #ee82ee;
+}
+.click-more small:after {
+  content: "▼";
+}
+.click-more-up small:after {
+  content: "▲" !important;
+}
+.shop-page-container .btn-select {
+  width: 80px;
+}
+
+/*social icons*/
+.social-icons a {
+  height: 31px;
+  width: 31px;
+  display: inline-block;
+}
+.social-icons .fb {
+  background: url("../images/icon-fb-black.png") no-repeat center center;
+}
+.social-icons .fb:hover {
+  background: url("../images/icon-fb-violet.png") no-repeat center center;
+}
+.social-icons .pintrest {
+  background: url("../images/icon-pintrest-black.png") no-repeat center center;
+}
+.social-icons .pintrest:hover {
+  background: url("../images/icon-pintrest-violet.png") no-repeat center center;
+}
+.social-icons .ig {
+  background: url("../images/icon-ig-black.png") no-repeat center center;
+}
+.social-icons .ig:hover {
+  background: url("../images/icon-ig-violet.png") no-repeat center center;
+}
+.social-icons .s {
+  background: url("../images/icon-s-black.png") no-repeat center center;
+}
+.social-icons .s:hover {
+  background: url("../images/icon-s-violet.png") no-repeat center center;
+}
+.social-icons .mail {
+  background: url("../images/icon-mail-black.png") no-repeat center center;
+}
+.social-icons .mail:hover {
+  background: url("../images/icon-mail-violet.png") no-repeat center center;
 }
 
 /*stories*/
@@ -831,7 +885,7 @@ footer .payment img {
   right: 50px !important;
   left: auto;
   bottom: 35px;
-  margin-top: -230px;
+  margin-top: -250px;
 }
 .vw-points:hover .popover {
   display: block;
@@ -973,7 +1027,7 @@ footer .payment img {
   padding: 0;
   width: 100%;
   border-radius: 0;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .btn-select-lg {
   font-size: 18px;
@@ -996,9 +1050,9 @@ footer .payment img {
 }
 .btn-select-lg .btn-select-value {
   top: 0;
-  font-size: 18px;
+  font-size: 14px;
   height: 44px;
-  line-height: 1.33333;
+  line-height: 1.7;
   padding: 10px 16px;
 }
 .btn-select .btn-select-arrow {
@@ -1011,10 +1065,10 @@ footer .payment img {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 18px;
+  font-size: 14px;
   height: 44px;
-  line-height: 1.33333;
-  padding: 10px 16px;
+  line-height: 1.6;
+  padding: 10px 10px;
 }
 .btn-select ul {
   display: none;
@@ -1037,6 +1091,7 @@ footer .payment img {
 .btn-select ul li {
   padding: 3px 6px;
   text-align: left;
+  font-size: 14px;
 }
 .btn-select ul li:hover {
   background-color: #f4f4f4;
@@ -1392,30 +1447,30 @@ input[type="radio"] .styled:checked + label::after {
   border: none !important;
 }
 .btn-info .btn-select-arrow {
-  background: #fff;
+  background-color: #fff;
   color: #999;
   border: none;
 }
 .btn-select.btn-info:hover, .btn-select.btn-info:active, .btn-select.btn-info.active {
-    border-color: #000;
+  border-color: #000;
 }
 .btn-select.btn-info ul li.selected {
-    background-color: #ee82ee;
-    color: white;
+  background-color: #ee82ee;
+  color: white;
 }
 .btn-select.btn-info ul {
-    border: #999 1px solid;
+  border: #999 1px solid;
 }
 
 .btn-select.btn-info .btn-select-value {
-    background-color: #fff;
-    border: #000 1px solid;
-    color: #000;
+  background-color: #fff;
+  border: #000 1px solid;
+  color: #000;
 }
 .btn-select.btn-info:hover, .btn-select.btn-info.active {
-    background-color: #fff;
-    border: #ee82ee 1px solid;
-    color: #000;
+  background-color: #fff;
+  border: #ee82ee 1px solid;
+  color: #000;
 }
 /* info End */
 
@@ -1498,17 +1553,17 @@ fieldset[disabled] .btn-danger {
   background-image: none;
 }
 .btn-default {
-  background: #000;
+  background-color: #000;
   color: #fff;
 }
 .btn-default:hover,
 .btn-default:focus {
-  background: #ee82ee;
+  background-color: #ee82ee;
   color: #fff;
 }
 .btn-default:active,
 .btn-default.active {
-  background: #ee82ee;
+  background-color: #ee82ee;
   color: #fff;
 }
 
@@ -1550,7 +1605,7 @@ fieldset[disabled] .btn-danger {
 /*btn black&white*/
 .btn-black {
   background-color: #000;
-  padding: 10px 30px;
+  padding: 11px 16px;
   border: 2px solid #000;
   color: #fff;
 }
@@ -1562,7 +1617,7 @@ fieldset[disabled] .btn-danger {
 .btn-white {
   background-color: #fff;
   color: #000;
-  padding: 10px 30px;
+  padding: 11px 16px;
   border: 2px solid #000;
 }
 .btn-white:hover {
@@ -1583,7 +1638,7 @@ fieldset[disabled] .btn-danger {
   border: 1px solid #ee82ee;
 }
 
-/*btn black&white*/
+/*btn facebook*/
 .btn-facebook {
   background-color: #27448a;
   padding: 10px 30px;
@@ -1594,6 +1649,36 @@ fieldset[disabled] .btn-danger {
   background-color: #ee82ee;
   border: 2px solid #ee82ee;
   color: #fff;
+}
+
+/*btn bag*/
+.btn-bag-white {
+  background-image: url("../images/icon-bag-white.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+/*btn heart solid*/
+.btn-heart-solid2 {
+  background-image: url("../images/icon-heart-solid2.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.btn-heart-solid2:hover {
+  background-image: url("../images/icon-heart-white2.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+/*btn question green*/
+.btn-question-green {
+  background-image: url("../images/icon-question-green.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  border-top: 1px solid #40e0d0;
+  border-bottom: 1px solid #40e0d0;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*btn circle*/
