@@ -12,6 +12,10 @@
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
+.text-lato-300 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 .text-violet {
   color: #ffccff;
 }
@@ -175,9 +179,6 @@ footer h5 {
 footer ul {
   list-style-type: none;
   padding: 0px;
-}
-footer li {
-  margin: 5px 0px;
 }
 footer .shipping-statement {
   font-size: 20px;
@@ -969,6 +970,18 @@ footer .payment img {
 }
 .join-form-wrap {
   display: none;
+}
+
+/*my account*/
+.my-account-list .active {
+  font-weight: bold;
+  text-decoration: underline;
+  pointer-events: none;
+  cursor: default;
+}
+.my-account-container label {
+  width: 80px;
+  display: inline-block;
 }
 
 /*hover zoom*/

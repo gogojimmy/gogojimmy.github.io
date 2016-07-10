@@ -1428,6 +1428,9 @@ ul ol,
 ol ol {
   margin-bottom: 0;
 }
+li {
+  line-height: 30px;
+}
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -2513,7 +2516,6 @@ label {
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
-  font-weight: bold;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
