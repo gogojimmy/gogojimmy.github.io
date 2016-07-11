@@ -287,6 +287,25 @@ $( document ).ready(function() {
     $(".add-shipping-info").show();
   });
 
+  //我的帳戶的新增收貨地址效果
+    var current_id = 0;
+    $('#my-add-shipping-info').click(function(){
+        nextElement($('#address-form_00'));
+    })
+
+    function nextElement(element){
+        var newElement = element.clone();
+        var id = current_id+1;
+        current_id = id;
+        if(id <10)id = "0"+id;
+        newElement.attr("id",element.attr("id").split("_")[0]+"_"+id);
+        newElement.appendTo($("#elements"));
+
+        $( "#elements .large" ).text(function( index ) {
+          return "寄送資訊 " + ( index + 1 );
+        });
+    }
+
   //加入會員效果
   $( ".join-btn" ).click(function() {
     $(".creat-account-wrap").hide();
