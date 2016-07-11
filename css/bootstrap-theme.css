@@ -42,6 +42,15 @@
 .bottom-spacing-sm {
   margin-bottom: 15px;
 }
+.both-spacing-xsm {
+  margin: 5px 0px;
+}
+.top-spacing-xsm {
+  margin-top: 5px;
+}
+.bottom-spacing-xsm {
+  margin-bottom: 5px;
+}
 .rl-spacing {
   margin: 0px 20px;
 }
@@ -59,6 +68,15 @@
 }
 .right-spacing-sm {
   margin-right: 10px;
+}
+.no-padding {
+  padding: 0px;
+}
+.right-padding {
+  padding: 0px 15px 0px 0px;
+}
+.left-padding {
+  padding: 0px 0px 0px 15px;
 }
 
 /*header*/
@@ -864,7 +882,8 @@ footer .payment img {
 }
 
 /*order details*/
-.add-shipping-info {
+.add-shipping-info,
+#my-add-shipping-info {
   cursor: pointer;
 }
 .order-details thead {
@@ -933,6 +952,12 @@ footer .payment img {
   color: #40e0d0;
   font-size: 90%;
   cursor: pointer;
+}
+.out-stock u {
+  border-bottom: 1px solid #40e0d0;
+}
+.out-stock a:hover u {
+  border-bottom: 1px solid #40e0d0;
 }
 .out-stock .popover {
   display: none;
