@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>VIOLET WHITE-ACCOUNT-我的帳戶</title>
+<title>VIOLET WHITE-ACCOUNT-寄送資訊</title>
 <!-- css -->
 <link rel="StyleSheet" type="text/css" href="css/bootstrap.css" />
 <link rel="StyleSheet" type="text/css" href="css/bootstrap-theme.css" />
@@ -150,50 +150,89 @@
           <div class="col-sm-2 col-lg-2 col-md-2">
             <h3 class="text-arapey">MY ACCOUNT</h3>
             <ul class="my-account-list top-spacing-sm list-unstyled">
-              <li class="active"><a href="my-account.html">我的帳戶</a></li>
+              <li><a href="my-account.html">我的帳戶</a></li>
               <li><a href="edit-profile.html">會員資料</a></li>
-              <li><a href="edit-address.html">寄送資訊</a></li>
+              <li class="active"><a href="edit-address.html">寄送資訊</a></li>
               <li><a href="my-points.html">我的點數</a></li>
               <li><a href="my-orders.html">我的訂單</a></li>
               <li><a href="my-wish-list.html">心願清單</a></li>
             </ul>
           </div>
           <div class="col-sm-10 col-lg-10 col-md-10">
-            <h1 class="text-lato-300">Hello, dear customer!</h1>
-            <div class="col-sm-12 col-lg-12 col-md-12 both-spacing">
-              從我的帳戶信息中心，您必須查看最近的帳戶活動的快照，並更新您的帳戶信息的能力。<br>選擇下面的鏈接查看或編輯信息。
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 large bottom-spacing-sm">
-              我的帳戶
-            </div>
-            <div class="col-sm-2 col-lg-2 col-md-2">
-              <a href="edit-profile.html"><img src="images/icon-lips-white-greyback.png"></a>
-            </div>
-            <div class="col-sm-10 col-lg-10 col-md-10 bottom-spacing">
-              <div class="col-sm-12 col-lg-12 col-md-12">
-                <ul class="list-unstyled">
-                  <li><label>姓名：</label>Tracy</li>
-                  <li><label>E-mail：</label>tracy@violetwhite.com</li>
-                  <li><label>生日：</label>2016.1.1</li>
-                  <li><label>密碼：</label>**************</li>
-                  <li><a href="edit-profile.html"><u><strong>編輯</strong></u></a></li>
-                </ul>
+
+            <div id="elements">
+              <div id="address-form_00" class="clearfix bottom-spacing-sm">
+                <div class="col-sm-12 col-lg-12 col-md-12 large bottom-spacing-sm">
+                  寄送資訊
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6">
+                  收件人姓
+                  <div class="form-group">
+                    <input type="text" class="form-control input-lg">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6">
+                  名
+                  <div class="form-group">
+                    <input type="text" class="form-control input-lg">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-12 col-md-12">
+                  連絡電話
+                  <div class="form-group">
+                    <input type="text" class="form-control input-lg">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+                  國家
+                  <a class="btn btn-info btn-select btn-select-lg">
+                      <input type="hidden" value="" name="" id="" class="btn-select-input">
+                      <span class="btn-select-value"></span>
+                      <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                      <ul style="display: none;">
+                          <li>美國</li>
+                          <li>台灣</li>
+                          <li>英國</li>
+                      </ul>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6">
+                  城市
+                  <a class="btn btn-info btn-select btn-select-lg">
+                      <input type="hidden" value="" name="" id="" class="btn-select-input">
+                      <span class="btn-select-value"></span>
+                      <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                      <ul style="display: none;">
+                          <li>台北市</li>
+                          <li>新北市</li>
+                      </ul>
+                  </a>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-md-6">
+                  區
+                  <a class="btn btn-info btn-select btn-select-lg">
+                      <input type="hidden" value="" name="" id="" class="btn-select-input">
+                      <span class="btn-select-value"></span>
+                      <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                      <ul style="display: none;">
+                          <li>台北市</li>
+                          <li>新北市</li>
+                      </ul>
+                  </a>
+                </div>
+                <div class="col-sm-12 col-lg-12 col-md-12 top-spacing-sm">
+                  詳細地址
+                  <div class="form-group">
+                      <input type="text" class="form-control input-lg">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 large bottom-spacing-sm">
-              寄送資訊
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              <a id="my-add-shipping-info"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> 新增收貨地址</a>
             </div>
-            <div class="col-sm-2 col-lg-2 col-md-2">
-            </div>
-            <div class="col-sm-10 col-lg-10 col-md-10">
-              <div class="col-sm-12 col-lg-12 col-md-12">
-                <ul class="list-unstyled">
-                  <li><label>姓名：</label></li>
-                  <li><label>電話：</label>+886 975 166 738</li>
-                  <li><label>地址：</label></li>
-                  <li><a href="edit-address.html"><u><strong>編輯</strong></u></a></li>
-                </ul>
-              </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 text-right">
+              <a class="btn btn-black top-spacing-sm" href="#"><strong>確認送出</strong></a>
             </div>
           </div>
         </div>
