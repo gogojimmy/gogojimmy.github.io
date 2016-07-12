@@ -19,6 +19,9 @@
 .text-violet {
   color: #ffccff;
 }
+.text-green {
+  color: #40e0d0;
+}
 
 /*spacing*/
 .four-spacing {
@@ -70,13 +73,19 @@
   margin-right: 10px;
 }
 .no-padding {
-  padding: 0px;
+  padding: 0px !important;
 }
 .right-padding {
-  padding: 0px 15px 0px 0px;
+  padding: 0px 15px 0px 0px !important;
 }
 .left-padding {
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 15px !important;
+}
+.rl-padding {
+  padding: 0px 15px !important;
+}
+.both-padding {
+  padding: 15px 0px !important;
 }
 
 /*header*/
@@ -1008,6 +1017,12 @@ footer .payment img {
   width: 80px;
   display: inline-block;
 }
+.expand-detail {
+  cursor: pointer;
+}
+.points-detail-chart {
+  display: none;
+}
 
 /*hover zoom*/
 .hover-zoom {
@@ -1498,8 +1513,8 @@ input[type="radio"] .styled:checked + label::after {
 }
 .btn-select.btn-info ul {
   border: #999 1px solid;
+  min-width: 120px !important;
 }
-
 .btn-select.btn-info .btn-select-value {
   background-color: #fff;
   border: #000 1px solid;
