@@ -137,6 +137,7 @@ $( document ).ready(function() {
               // instead of a settings object
             ]
   });
+
   //購物車數量加減
   $('.btn-number').click(function(e){
       e.preventDefault();
@@ -370,6 +371,11 @@ $( document ).ready(function() {
       // 如果是點擊到 $link 時則取消連結功能
       return false;
     }).eq(_default).mouseover();
+  });
+
+  //購物金明細開合效果
+  $( ".expand-detail" ).click(function(){
+    $( ".points-detail-chart" ).toggle();
   });
 
 });
