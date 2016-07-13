@@ -259,16 +259,14 @@ $( document ).ready(function() {
     $(".shipping-info-form").show();
   }
   $( ".add-shipping-info" ).click(function() {
-    $(".shipping-info-card").hide();
     $(".same-with").show();
-    $(".shipping-info-form").show();
-    $(".add-shipping-info").hide();
+    $(".shipping-info-form").slideDown("slow");
+    $(".add-shipping-info").fadeOut("slow");
   });
   $( ".shipping-info-form .cancel" ).click(function() {
-    $(".shipping-info-card").show();
     $(".same-with").hide();
-    $(".shipping-info-form").hide();
-    $(".add-shipping-info").show();
+    $(".shipping-info-form").slideUp("slow");
+    $(".add-shipping-info").fadeIn("slow");
   });
 
   //我的帳戶的新增收貨地址效果
