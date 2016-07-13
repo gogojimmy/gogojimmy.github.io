@@ -4,6 +4,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
+ .hide {
+    display: none;
+}
+
 /*font style*/
 .text-arapey {
   font-family: 'Arapey', serif;
@@ -21,6 +26,9 @@
 }
 .text-green {
   color: #40e0d0;
+}
+.text-red {
+  color: #f00;
 }
 
 /*spacing*/
@@ -131,6 +139,9 @@
 header .logo {
   border-bottom: 1px solid #000;
   margin-top: 65px;
+}
+.ig-list {
+  margin-bottom: 30px;
 }
 
 /*search*/
@@ -664,41 +675,20 @@ footer .payment img {
   opacity: 0.7;
   padding: 15px 20px 5px 20px;
 }
-.shop-the-story .switch span {
+.shop-the-story .switch .reveal {
   background: url('../images/icon-bag-black.png') no-repeat;
   padding: 5px 5px 5px 25px;
   font-weight: 400;
   cursor: pointer;
 }
-.shop-the-story .switch span:hover {
+.shop-the-story .switch .reveal:hover {
   background: url('../images/icon-bag-violet.png') no-repeat;
   color: #ee82ee;
 }
 .shop-the-story-list {
   display: none;
 }
-.slider {
-  width: 100%;
-  margin: 36px auto;
-}
-.slick-list {
-  height: 115px;
-}
-.slick-track {
-  width: 300% !important;
-  height: 115px !important;
-}
-.slick-slide {
-  margin: 0px 20px;
-  width: 115px !important;
-  float: left !important;
-}
-.slick-prev:before,
-.slick-next:before {
-    color: black;
-}
 .stories-page p {
-  margin: 30px 0px;
   font-size: 15px;
   line-height: 28px;
 }
@@ -709,7 +699,6 @@ footer .payment img {
 
 /*comment*/
 .comment-wrap {
-  margin: 20px 0px;
   border-bottom: 3px solid #000;
 }
 
@@ -1024,6 +1013,11 @@ footer .payment img {
   display: none;
 }
 
+/*search*/
+.search-container .product-list .container {
+  border-top: 1px solid #000;
+}
+
 /*hover zoom*/
 .hover-zoom {
   display: block;
@@ -1131,7 +1125,6 @@ footer .payment img {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: none !important;
   position: absolute;
   left: -1px;
   right: -1px;
