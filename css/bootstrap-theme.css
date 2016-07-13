@@ -1163,6 +1163,7 @@ footer .payment img {
   width: 20px;
   height: 20px;
   left: 0;
+  top: 5px;
   margin-left: -20px;
   border: 1px solid #000;
   background-color: #fff;
@@ -1179,7 +1180,6 @@ footer .payment img {
   top: 0;
   margin-left: -19px;
   padding-left: 3px;
-  padding-top: 2px;
   font-size: 11px;
   color: #555555;
 }
