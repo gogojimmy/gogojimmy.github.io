@@ -86,57 +86,40 @@ $( document ).ready(function() {
         return false;
   });
 
-  //shop the story
-  $('.toggle-wrap').hide();
-  $('span.reveal').click(function(){
-      $('.toggle-wrap').toggle('show');
+  //gallery
+  $('.gallery-4').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
+  $('.gallery-6').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 6
+  });
 
+  //shop the story
+  $(".shop-the-story .reveal").each(function(i) {
+    var id = "shop-story" + i;
+    $(this).attr("id", id);
+  });
+  $(".toggle-wrap").each(function(i) {
+    var id = "shop-story" + i;
+    $(this).attr("class", id);
+  });
+
+  $('span.reveal').click(function(){
       if ($.trim($(this).text()) === 'SHOP THE STORY ▼') {
           $(this).text('SHOP THE STORY ▲');
+          $("." + $(this).attr('id')).slideUp('slow');
       } else {
           $(this).text('SHOP THE STORY ▼');
+          $("." + $(this).attr('id')).slideDown('slow');
       }
 
       return false;
   });
-  $("a[href='" + window.location.hash + "']").parent(".reveal").click();
 
-  //gallery
-  $('.responsive').slick({
-            dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            responsive: [
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 3,
-                  infinite: true,
-                  dots: false
-                }
-              },
-              {
-                breakpoint: 600,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
-              // You can unslick at a given breakpoint now by adding:
-              // settings: "unslick"
-              // instead of a settings object
-            ]
-  });
 
   //購物車數量加減
   $('.btn-number').click(function(e){
@@ -211,7 +194,7 @@ $( document ).ready(function() {
           }
   });
 
-  //購物車details
+  //select下拉選單效果
       $(document).ready(function () {
           $(".btn-select").each(function (e) {
               var value = $(this).find("ul li.selected").html();
