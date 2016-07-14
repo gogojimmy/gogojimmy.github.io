@@ -17,9 +17,12 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/basic.js"></script>
 <!-- slick gallery css&js -->
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<!--bootstrap validator-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
 </head>
 <body>
 <!--Start Fb Like Script-->
@@ -180,25 +183,25 @@
             <div class="col-sm-6 col-lg-6 col-md-6">
               訂購人姓
               <div class="form-group">
-                <input type="text" class="form-control input-lg" id="name" name="name">
+                <input type="text" class="form-control input-lg" name="lastName">
               </div>
             </div>
             <div class="col-sm-6 col-lg-6 col-md-6">
               名
               <div class="form-group">
-                <input type="text" class="form-control input-lg" id="name" name="name">
+                <input type="text" class="form-control input-lg" name="firstName">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               連絡電話
               <div class="form-group">
-                <input type="text" class="form-control input-lg" id="name" name="name">
+                <input type="text" class="form-control input-lg" name="phone">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               連絡信箱
               <div class="form-group">
-                <input type="text" class="form-control input-lg" id="name" name="name">
+                <input type="text" class="form-control input-lg" name="email">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
@@ -215,13 +218,23 @@
               <div class="col-sm-12 col-lg-12 col-md-12">
                 密碼&nbsp;&nbsp;<small>請使用英文及數字0-9, 不得小於8個字元</small>
                 <div class="form-group">
-                  <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請勿輸入標點符號及空格">
+                  <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請勿輸入標點符號及空格" name="password"
+
+                data-bv-stringlength="true"
+                data-bv-stringlength-min="8"
+                data-bv-stringlength-message="密碼不得小於8個字元">
                 </div>
               </div>
               <div class="col-sm-12 col-lg-12 col-md-12">
                 確認密碼
                 <div class="form-group">
-                  <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請再次輸入確認密碼">
+                  <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請再次輸入確認密碼" name="confirmPassword"
+                  data-bv-notempty="true"
+                  data-bv-notempty-message="此為必填項目"
+
+                  data-bv-identical="true"
+                  data-bv-identical-field="password"
+                  data-bv-identical-message="兩次輸入的密碼不一致">
                 </div>
               </div>
             </div>
@@ -238,19 +251,19 @@
               <div class="col-sm-6 col-lg-6 col-md-6">
                 收件人姓
                 <div class="form-group">
-                  <input type="text" class="form-control input-lg">
+                  <input type="text" class="form-control input-lg" name="lastName">
                 </div>
               </div>
               <div class="col-sm-6 col-lg-6 col-md-6">
                 名
                 <div class="form-group">
-                  <input type="text" class="form-control input-lg">
+                  <input type="text" class="form-control input-lg" name="firstName">
                 </div>
               </div>
               <div class="col-sm-12 col-lg-12 col-md-12">
                 連絡電話
                 <div class="form-group">
-                  <input type="text" class="form-control input-lg">
+                  <input type="text" class="form-control input-lg" name="phone">
                 </div>
               </div>
               <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
@@ -293,7 +306,7 @@
               <div class="col-sm-12 col-lg-12 col-md-12 top-spacing-sm">
                 詳細地址
                 <div class="form-group">
-                  <input type="text" class="form-control input-lg">
+                  <input type="text" class="form-control input-lg" name="address">
                 </div>
               </div>
               <div class="col-sm-12 col-lg-12 col-md-12">
@@ -408,7 +421,7 @@
                 </label>
               </div>
               <div class="input-group pull-left">
-                <input type="text" class="form-control" placeholder="ENTER" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="ENTER" aria-describedby="basic-addon2" name="coupon">
                 <span class="input-group-addon" id="basic-addon2">使用</span>
               </div>
             </div>

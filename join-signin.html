@@ -18,9 +18,12 @@
 <script src="js/basic.js"></script>
 <script src="https://use.fontawesome.com/e22605634b.js"></script>
 <!-- slick gallery css&js -->
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<!--bootstrap validator-->
+<link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
 </head>
 <body>
 <!--Start Fb Like Script-->
@@ -34,7 +37,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <!--End Fb Like Script-->
 
-<div class="payment-container">
+<div class="join-signin-container">
   <!-- Body Container -->
   <div id="container">
     <!-- Start Header -->
@@ -143,8 +146,8 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Cart list -->
-    <div class="cart-list both-spacing">
+    <!-- Start Join & Sign in -->
+    <div class="join-signin both-spacing">
       <div class="container">
         <div class="row">
           <div class="sign-in-wrap col-sm-6 col-lg-6 col-md-6">
@@ -158,13 +161,13 @@
             <div class="col-sm-12 col-lg-12 col-md-12">
               Email Address
               <div class="form-group">
-                <input type="text" placeholder="Email Address" class="form-control input-lg">
+                <input type="text" placeholder="Email Address" class="form-control input-lg" name="email">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               Password
               <div class="form-group">
-                <input type="password" placeholder="Password" class="form-control input-lg">
+                <input type="password" placeholder="Password" class="form-control input-lg" name="password">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
@@ -207,31 +210,47 @@
             <div class="col-sm-12 col-lg-12 col-md-12">
               註冊信箱&nbsp;&nbsp;<small>此信箱將作為登入帳號使用</small>
               <div class="form-group">
-                <input type="text" class="form-control input-lg">
+                <input type="text" class="form-control input-lg" name="email">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               姓
               <div class="form-group">
-                <input type="text" class="form-control input-lg">
+                <input type="text" class="form-control input-lg" name="lastName">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               名
               <div class="form-group">
-                <input type="text" class="form-control input-lg">
+                <input type="text" class="form-control input-lg" name="firstName">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               密碼&nbsp;&nbsp;<small>請使用英文及數字0-9, 不得小於8個字元</small>
               <div class="form-group">
-                <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請勿輸入標點符號及空格">
+                <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請勿輸入標點符號及空格" name="password"
+
+                data-bv-stringlength="true"
+                data-bv-stringlength-min="8"
+                data-bv-stringlength-message="密碼不得小於8個字元">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               確認密碼
               <div class="form-group">
-                <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請再次輸入確認密碼">
+                <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請再次輸入確認密碼" name="confirmPassword"
+                data-bv-notempty="true"
+                data-bv-notempty-message="此為必填項目"
+
+                data-bv-identical="true"
+                data-bv-identical-field="password"
+                data-bv-identical-message="兩次輸入的密碼不一致">
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              連絡電話
+              <div class="form-group">
+                <input type="text" class="form-control input-lg" name="phone">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
@@ -292,7 +311,7 @@
         </div>
       </div>
     </div>
-    <!-- End Cart list -->
+    <!-- End Join & Sign in -->
 
     <!-- Start Footer -->
     <footer>
