@@ -1,9 +1,10 @@
 $( document ).ready(function() {
   //menu fix
   var $menu = $('.navbar'),
-    $logo = $('.logo'),
-    _logo = $logo.offset().top;
-    _top = $menu.offset().top;
+      $logo = $('.logo'),
+      _logo = $logo.offset().top,
+      _top = $menu.offset().top;
+
   var $win = $(window).scroll(function(){
     if($win.scrollTop() >= _logo){
       if($menu.css('position')!='fixed'){
@@ -29,7 +30,30 @@ $( document ).ready(function() {
           $('span.take-chance').fadeIn('fast');
         });
     }
+
   });
+
+  $(function() {
+      $(window).scroll(sticky_relocate);
+      sticky_relocate();
+  });
+
+  var dir = 1;
+  var MIN_TOP = 200;
+  var MAX_TOP = 350;
+
+  function autoscroll() {
+      var window_top = $(window).scrollTop() + dir;
+      if (window_top >= MAX_TOP) {
+          window_top = MAX_TOP;
+          dir = -1;
+      } else if (window_top <= MIN_TOP) {
+          window_top = MIN_TOP;
+          dir = 1;
+      }
+      $(window).scrollTop(window_top);
+      window.setTimeout(autoscroll, 100);
+  }
 
   //tooltip
   $('[data-toggle="popover"]').popover()
@@ -357,6 +381,72 @@ $( document ).ready(function() {
   //購物金明細開合效果
   $( ".expand-detail" ).click(function(){
     $( ".points-detail-chart" ).toggle();
+  });
+
+  //表單驗證
+  $('.container').bootstrapValidator({
+        //        live: 'disabled',
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            lastName: {
+                validators: {
+                    notEmpty: {
+                        message: '此為必填項目'
+                    }
+                }
+            },
+            firstName: {
+                validators: {
+                    notEmpty: {
+                        message: '此為必填項目'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: '此為必填項目'
+                    },
+                    digits: {
+                        message: '連絡電話格式不符'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                    notEmpty: {
+                        message: '此為必填項目'
+                    }
+                }
+            },
+            coupon: {
+                validators: {
+                    digits: {
+                        message: '折扣優惠碼格式不符'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: '此為必填項目'
+                    },
+                    emailAddress: {
+                        message: 'E-mail格式不符'
+                    }
+                }
+            }
+        }
+    });
+
+  //我的點數邀請好友開合效果
+  $( ".invite-friends-bnt" ).click(function(){
+    $( ".invite-friends-form" ).toggle();
   });
 
 });
