@@ -91,6 +91,20 @@
   padding: 15px 0px !important;
 }
 
+/*border style*/
+.border-top {
+  border-top: 1px solid #000;
+}
+.border-bottom {
+  border-bottom: 1px solid #000;
+}
+.border-right {
+  border-right: 1px solid #000;
+}
+.border-left {
+  border-left: 1px solid #000;
+}
+
 /*header*/
 .top-bar {
   background: #000;
