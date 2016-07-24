@@ -424,10 +424,15 @@ $( document ).ready(function() {
                     }
                 }
             },
-            coupon: {
+            vwpoints: {
                 validators: {
                     digits: {
                         message: '折扣優惠碼格式不符'
+                    },
+                    between: {
+                        min: 0,
+                        max: 20,
+                        message: '你所輸入的VW POINTS已超過可使用額度，請重新輸入'
                     }
                 }
             },
