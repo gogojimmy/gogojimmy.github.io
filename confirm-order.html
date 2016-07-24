@@ -145,8 +145,8 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Cart list -->
-    <div class="cart-list both-spacing">
+    <!-- Start Confirm Order -->
+    <div class="confirm-order both-spacing">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-lg-8 col-md-8 ">
@@ -158,24 +158,210 @@
             <div class="stepwizard-row setup-panel">
               <div class="stepwizard-step">
                 <a class="btn btn-circle btn-primary" type="button" href="#">1</a>
-                <p>查看購物車</p>
+                <p>確認商品</p>
               </div>
               <div class="stepwizard-step">
                 <a class="btn btn-circle btn-primary" type="button" href="#">2</a>
-                <p>確認訂單</p>
+                <p>填寫訂單</p>
               </div>
               <div class="stepwizard-step">
                 <a disabled="disabled" class="btn btn-circle btn-default" type="button" href="#">3</a>
-                <p>付款方式</p>
+                <p>前往付款</p>
               </div>
               <div class="stepwizard-step">
                 <a disabled="disabled" class="btn btn-circle btn-default" type="button" href="#">4</a>
-                <p>付款成功</p>
+                <p>訂購成功</p>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
+          <div class="order-details col-sm-12 col-lg-12 col-md-12">
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-file1">訂單明細</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Product</th>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-center">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="col-sm-3 col-md-3">
+                      <div class="media">
+                        <a href="#" class="cover pull-left">
+                          <img src="images/shop-the-story-list-img1.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                          <a href="#">水晶，玻璃，鍍金項鍊</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      1
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      NT$988
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-sm-3 col-md-3">
+                      <div class="media">
+                        <a href="#" class="cover pull-left">
+                          <img src="images/shop-the-story-list-img1.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                          <a href="#">水晶，玻璃，鍍金項鍊</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      1
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      NT$988
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-sm-3 col-md-3">
+                      <div class="media">
+                        <a href="#" class="cover pull-left">
+                          <img src="images/shop-the-story-list-img1.png" class="media-object">
+                        </a>
+                        <div class="media-body">
+                          <a href="#">水晶，玻璃，鍍金項鍊</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      1
+                    </td>
+                    <td class="col-sm-1 col-md-1 text-center">
+                      NT$988
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-boderbtm-grey text-block">請選擇折扣方式</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="checkbox checkbox-default both-spacing-sm">
+                <input type="checkbox" class="into-member styled" id="checkbox1">
+                <label for="checkbox1" class="glyphicon-ok"> 我有折扣優惠碼</label>
+              </div>
+              <div class="form-group left-spacing">
+                <input type="text" placeholder="請輸入折扣優惠碼" class="form-control input-lg" name="coupon" data-bv-stringlength="true"
+                data-bv-stringlength-min="10" data-bv-stringlength-message="折扣優惠碼不得小於10個字元">
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="checkbox checkbox-default both-spacing-sm">
+                <input type="checkbox" class="into-member styled" id="checkbox2" disabled="disabled">
+                <label for="checkbox2" class="glyphicon-ok vw-points popover-wrap"> 使用會員禮物金VW POINTS <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                  <div class="popover top">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title text-arapey">WHAT ARE VW POINTS?</h3>
+                    <div class="popover-content"> <p>您在VIOLET WHITE的每筆消費金額都將回饋1%(含稅100元等於1點)的點數。１點相當於１元的價值，可累積至下次訂購時當作現金折抵使用。
+                    <br><a href="#"><u>Learn More</u></a></p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="left-spacing">
+                你尚未成為會員，還無法使用VW POINTS，會員專屬本次消費最高可累積金額 20 元喔!
+                <br>快去 <a href="join-signin.html"><u>加入會員</u></a> 吧！
+              </div>
+            </div>
+            <div class="total-details col-sm-12 col-lg-12 col-md-12 top-spacing">
+              <div class="col-sm-6 col-lg-6 col-md-6">
+                商品小計
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+                NT$ 3952
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6">
+                折扣金額
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+                優惠碼折扣 - NT$ 100
+              </div>
+              <div class="last-col col-sm-6 col-lg-6 col-md-6">
+                運費 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+              </div>
+              <div class="last-col col-sm-6 col-lg-6 col-md-6 text-right">
+                滿額免運
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing top-spacing-sm">
+              <div class="col-sm-6 col-lg-6 col-md-6">
+                <strong>Total</strong>
+              </div>
+              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+                <strong>NT$ 3852</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="order-details col-sm-6 col-lg-6 col-md-6">
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-car">請選擇運送區域</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing">
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="台灣及離島" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value">台灣及離島</span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li class="selected">台灣及離島</li>
+                      <li>美國</li>
+                  </ul>
+              </a>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-wallet-thin">請選擇付款方式</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="radio radio-primary">
+                <input type="radio" value="option1" id="radio-credit" name="radio1">
+                <label for="radio-credit">
+                  信用卡付款
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="radio radio-primary">
+                <input type="radio" value="option1" id="radio-atm" name="radio1">
+                <label for="radio-atm">
+                  ATM付款
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <div class="radio radio-primary">
+                <input type="radio" value="option1" id="radio-cs" name="radio1">
+                <label for="radio-cs">
+                  超商付款
+                  <img class="rl-spacing-sm" src="images/icon-7-11-color.png">
+                  <img class="rl-spacing-sm" src="images/icon-familymart-color.png">
+                  <img class="rl-spacing-sm" src="images/icon-hilife-color.png">
+                  <img class="rl-spacing-sm" src="images/icon-ok-color.png">
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12">
+              <small>訂單備註</small>
+              <div class="form-group">
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
+            </div>
+          </div>
           <div class="shipping-info col-sm-6 col-lg-6 col-md-6">
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
               <span class="title-member">訂購人資訊</span><span class="small">購買及運送資訊將會寄至訂購人信箱</span>
@@ -206,12 +392,12 @@
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
               <div class="checkbox checkbox-default both-spacing-sm">
-                <input id="checkbox1" class="into-member styled" type="checkbox">
-                <label class="glyphicon-ok" for="checkbox1"> 同意將此次訂購資訊升級為Violet White會員</label>
+                <input id="checkbox3" class="into-member styled" type="checkbox">
+                <label class="glyphicon-ok" for="checkbox3"> 同意將此次訂購資訊升級為Violet White會員</label>
               </div>
               <div class="checkbox checkbox-default both-spacing-sm">
-                <input id="checkbox2" class="styled" type="checkbox">
-                <label class="glyphicon-ok" for="checkbox2"> 我同意接受Violet White<a href="#"><u>服務條款</u></a>和<a href="#"><u>隱私權政策</u></a></label>
+                <input id="checkbox4" class="styled" type="checkbox">
+                <label class="glyphicon-ok" for="checkbox4"> 我同意接受Violet White<a href="#"><u>服務條款</u></a>和<a href="#"><u>隱私權政策</u></a></label>
               </div>
             </div>
             <div class="password-wrap">
@@ -243,8 +429,8 @@
             </div>
             <div class="same-with col-sm-6 col-lg-6 col-md-6 top-spacing bottom-spacing-sm text-right">
               <div class="checkbox checkbox-default">
-                <input id="checkbox3" class="styled" type="checkbox">
-                <label class="glyphicon-ok" for="checkbox3"> 與訂購人相同</label>
+                <input id="checkbox-same-whith" class="styled" type="checkbox">
+                <label class="glyphicon-ok" for="checkbox-same-whith"> 與訂購人相同</label>
               </div>
             </div>
             <div class="shipping-info-form">
@@ -321,7 +507,7 @@
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
               <a class="btn btn-info btn-select btn-select-lg">
                   <input type="hidden" value="電子發票" name="" id="" class="btn-select-input">
-                  <span class="btn-select-value"></span>
+                  <span class="btn-select-value">電子發票</span>
                   <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
                   <ul style="display: none;">
                       <li class="selected">電子發票</li>
@@ -329,158 +515,19 @@
                   </ul>
               </a>
             </div>
-            <div class="col-sm-12 col-lg-12 col-md-12">
-              訂單備註
-              <div class="form-group">
-                <textarea required="" class="form-control" name="" id=""></textarea>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12">
-              <button class="btn btn-default btn-prev top-spacing" type="submit">回購物車</button>
-            </div>
           </div>
-          <div class="order-details col-sm-6 col-lg-6 col-md-6">
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <span class="title-file1">訂單明細</span>
+          <div class="row">
+            <div class="col-sm-6 col-lg-6 col-md-6">
+              <a href="cart.html" class="btn btn-default btn-prev">回購物車</a>
             </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th class="text-center">Quantity</th>
-                    <th class="text-center">Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="col-sm-3 col-md-3">
-                      <div class="media">
-                        <a class="cover pull-left" href="#">
-                          <img class="media-object" src="images/shop-the-story-list-img1.png">
-                        </a>
-                        <div class="media-body">
-                          <a href="#">水晶，玻璃，鍍金項鍊</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="col-sm-1 col-md-1 text-center">
-                      1
-                    </td>
-                    <td class="col-sm-1 col-md-1 text-center">
-                      NT$988
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="col-sm-3 col-md-3">
-                      <div class="media">
-                        <a class="cover pull-left" href="#">
-                          <img class="media-object" src="images/shop-the-story-list-img1.png">
-                        </a>
-                        <div class="media-body">
-                          <a href="#">水晶，玻璃，鍍金項鍊</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="col-sm-1 col-md-1 text-center">
-                      1
-                    </td>
-                    <td class="col-sm-1 col-md-1 text-center">
-                      NT$988
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="col-sm-3 col-md-3">
-                      <div class="media">
-                        <a class="cover pull-left" href="#">
-                          <img class="media-object" src="images/shop-the-story-list-img1.png">
-                        </a>
-                        <div class="media-body">
-                          <a href="#">水晶，玻璃，鍍金項鍊</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="col-sm-1 col-md-1 text-center">
-                      1
-                    </td>
-                    <td class="col-sm-1 col-md-1 text-center">
-                      NT$988
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <span class="title-boderbtm-grey text-block">請選擇折扣方式</span>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <div class="radio radio-primary pull-left">
-                <input type="radio" name="radio1" id="radio1" value="option1">
-                <label for="radio1">
-                  我有折扣優惠碼
-                </label>
-              </div>
-              <div class="input-group pull-left">
-                <input type="text" class="form-control" placeholder="ENTER" aria-describedby="basic-addon2" name="coupon">
-                <span class="input-group-addon" id="basic-addon2">使用</span>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <div class="radio radio-primary pull-left">
-                <input type="radio" name="radio1" id="radio2" value="option2">
-                <label for="radio2">
-                  會員禮物金
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <div class="vw-points btn btn-primary btn-block">
-                您這次消費可累積 100 VW Points. <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                <div class="popover top">
-                  <div class="arrow"></div>
-                  <h3 class="popover-title text-arapey">WHAT ARE VW POINTS?</h3>
-                  <div class="popover-content"> <p>您在VIOLET WHITE的每筆消費金額都將回饋1%(含稅100元等於1點)的點數。１點相當於１元的價值，可累積至下次訂購時當作現金折抵使用。
-                  <br><u>Learn More</u></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="total-details col-sm-12 col-lg-12 col-md-12 top-spacing">
-              <div class="col-sm-6 col-lg-6 col-md-6">
-                商品小計
-              </div>
-              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
-                NT$ 3952
-              </div>
-              <div class="col-sm-6 col-lg-6 col-md-6">
-                折扣金額
-              </div>
-              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
-                優惠碼折扣 - NT$ 100
-              </div>
-              <div class="last-col col-sm-6 col-lg-6 col-md-6">
-                運費 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-              </div>
-              <div class="last-col col-sm-6 col-lg-6 col-md-6 text-right">
-                滿額免運
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing top-spacing-sm">
-              <div class="col-sm-6 col-lg-6 col-md-6">
-                <strong>Total</strong>
-              </div>
-              <div class="col-sm-6 col-lg-6 col-md-6 text-right">
-                <strong>NT$ 3852</strong>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 text-right">
-              <a href="payment-method.html" class="btn btn-default btn-next">去結帳了</a>
+            <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+              <a href="payment-successful.html" class="btn btn-default btn-next">好了，付款去！</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- End Cart list -->
+    <!-- End Confirm Order -->
 
     <!-- Start Footer -->
     <footer>
