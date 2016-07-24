@@ -1046,20 +1046,27 @@ footer .payment img {
 .order-details .cover .media-object {
   max-width: 50px;
 }
-.vw-points {
-  position: relative;
+.popover-wrap {
+  cursor: default;
 }
-.vw-points .popover {
+.popover-wrap .glyphicon {
+  position: relative;
+  display: inline-block;
+}
+.popover-wrap .popover {
   display: none;
   color: #000;
   position: absolute;
-  right: 50px !important;
+  right: -20px !important;
   left: auto;
   bottom: 35px;
   margin-top: -250px;
 }
-.vw-points:hover .popover {
+.popover-wrap:hover .popover {
   display: block;
+}
+.vw-points .popover {
+  right: -82px !important;
 }
 .total-details .last-col {
   border-bottom: 2px solid #ddd;
@@ -1087,10 +1094,16 @@ footer .payment img {
   position: absolute;
   left: -70px;
   bottom: 35px;
-  margin-top: -175px;
+  margin-top: -180px;
 }
 .cs-payment .cs:hover .popover {
   display: block;
+}
+.atm-payment .popover {
+  position: absolute;
+  left: 0px;
+  bottom: 35px;
+  margin-top: -310px;
 }
 
 /*wish list*/
@@ -1217,6 +1230,12 @@ footer .payment img {
 }
 .title-car {
   background: url("../images/icon-car-solid.png") no-repeat;
+  padding-left: 25px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.title-wallet-thin {
+  background: url("../images/icon-wallet-solid-thin.png") no-repeat;
   padding-left: 25px;
   margin-right: 10px;
   font-size: 18px;
@@ -1365,12 +1384,13 @@ footer .payment img {
   margin-top: 7px;
 }
 .checkbox input[type="checkbox"]:disabled + label,
-.checkbox input[type="radio"]:disabled + label {
-  opacity: 0.65; }
 .checkbox input[type="checkbox"]:disabled + label::before,
 .checkbox input[type="radio"]:disabled + label::before {
-  background-color: #eeeeee;
+  color: #999;
   cursor: not-allowed;
+}
+.checkbox input[type="checkbox"]:disabled + label::before {
+  border: 1px solid #aaa;
 }
 .checkbox.checkbox-circle label::before {
   border-radius: 50%;
