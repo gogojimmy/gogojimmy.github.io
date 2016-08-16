@@ -252,17 +252,17 @@
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
               <div class="checkbox checkbox-default both-spacing-sm">
-                <input type="checkbox" class="into-member styled" id="checkbox1">
+                <input type="checkbox" class="styled checkbox-coupon" id="checkbox1">
                 <label for="checkbox1" class="glyphicon-ok"> 我有折扣優惠碼</label>
               </div>
               <div class="form-group left-spacing">
-                <input type="text" placeholder="請輸入折扣優惠碼" class="form-control input-lg" name="coupon" data-bv-stringlength="true"
+                <input type="text" placeholder="請輸入折扣優惠碼" class="form-control input-lg text-coupon" name="coupon" data-bv-stringlength="true"
                 data-bv-stringlength-min="10" data-bv-stringlength-message="折扣優惠碼不得小於10個字元">
               </div>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
               <div class="checkbox checkbox-default both-spacing-sm">
-                <input type="checkbox" class="into-member styled" id="checkbox2">
+                <input type="checkbox" class="styled checkbox-vwpoints" id="checkbox2">
                 <label for="checkbox2" class="glyphicon-ok vw-points popover-wrap"> 使用會員禮物金VW Points <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                   <div class="popover top">
                     <div class="arrow"></div>
@@ -274,8 +274,22 @@
                 </label>&nbsp;&nbsp;<small>你尚有 20 VW POINTS 可以使用，本次最高可折抵金額 20 元</small>
               </div>
               <div class="form-group left-spacing">
-                <input type="text" placeholder="請輸入本次欲折抵的 VW POINTS" class="form-control input-lg" name="vwpoints">
+                <input type="text" placeholder="請輸入本次欲折抵的 VW POINTS" class="form-control input-lg text-vwpoints" name="vwpoints">
               </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <span class="title-car">請選擇運送區域</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="台灣及離島" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value">台灣及離島</span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li class="selected">台灣及離島</li>
+                      <li>美國</li>
+                  </ul>
+              </a>
             </div>
             <div class="total-details col-sm-12 col-lg-12 col-md-12 top-spacing">
               <div class="col-sm-6 col-lg-6 col-md-6">
@@ -310,21 +324,19 @@
         <div class="row">
           <div class="order-details col-sm-6 col-lg-6 col-md-6">
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <span class="title-car">請選擇運送區域</span>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing">
-              <a class="btn btn-info btn-select btn-select-lg">
-                  <input type="hidden" value="台灣及離島" name="" id="" class="btn-select-input">
-                  <span class="btn-select-value">台灣及離島</span>
-                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
-                  <ul style="display: none;">
-                      <li class="selected">台灣及離島</li>
-                      <li>美國</li>
-                  </ul>
-              </a>
+              <span class="title-member">訂購人資訊</span><span class="small">購買及運送資訊將會寄至訂購人信箱</span>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <span class="title-wallet-thin">請選擇付款方式</span>
+              <div class="border-block edit-block">
+                <small>
+                Peg Su
+                <br>0975166738
+                <br>peggy@yahoo.com
+                </small>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 top-spacing bottom-spacing-sm">
+              <span class="title-pay-solid">請選擇付款方式</span>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
               <div class="radio radio-primary">
@@ -354,51 +366,23 @@
                 </label>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-12 col-md-12">
-              <small>訂單備註</small>
-              <div class="form-group">
-                <textarea class="form-control" name="" id=""></textarea>
-              </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 top-spacing bottom-spacing-sm">
+              <span class="title-file2">發票資訊</span>
+            </div>
+            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing">
+              <a class="btn btn-info btn-select btn-select-lg">
+                  <input type="hidden" value="電子發票" name="" id="" class="btn-select-input">
+                  <span class="btn-select-value">電子發票</span>
+                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
+                  <ul style="display: none;">
+                      <li class="selected">電子發票</li>
+                      <li>三聯式發票</li>
+                  </ul>
+              </a>
             </div>
           </div>
           <div class="shipping-info col-sm-6 col-lg-6 col-md-6">
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <span class="title-member">訂購人資訊</span><span class="small">購買及運送資訊將會寄至訂購人信箱</span>
-            </div>
             <div class="col-sm-12 col-lg-12 col-md-12">
-              <div class="border-block edit-block">
-                <small>
-                Peg Su
-                <br>0975166738
-                <br>peggy@yahoo.com
-                </small>
-              </div>
-            </div>
-            <div class="password-wrap">
-              <div class="col-sm-12 col-lg-12 col-md-12">
-                密碼&nbsp;&nbsp;<small>請使用英文及數字0-9, 不得小於8個字元</small>
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請勿輸入標點符號及空格" name="password"
-
-                data-bv-stringlength="true"
-                data-bv-stringlength-min="8"
-                data-bv-stringlength-message="密碼不得小於8個字元">
-                </div>
-              </div>
-              <div class="col-sm-12 col-lg-12 col-md-12">
-                確認密碼
-                <div class="form-group">
-                  <input type="password" class="form-control input-lg" data-toggle="tooltip" data-placement="top" title="請再次輸入確認密碼" name="confirmPassword"
-                  data-bv-notempty="true"
-                  data-bv-notempty-message="此為必填項目"
-
-                  data-bv-identical="true"
-                  data-bv-identical-field="password"
-                  data-bv-identical-message="兩次輸入的密碼不一致">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 top-spacing">
               <span class="title-car">寄送資訊</span>
             </div>
             <div class="shipping-info-card col-sm-12 col-lg-12 col-md-12">
@@ -501,28 +485,20 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 top-spacing bottom-spacing-sm">
-              <span class="title-file2">發票資訊</span>
-            </div>
-            <div class="col-sm-12 col-lg-12 col-md-12 bottom-spacing-sm">
-              <a class="btn btn-info btn-select btn-select-lg">
-                  <input type="hidden" value="電子發票" name="" id="" class="btn-select-input">
-                  <span class="btn-select-value">電子發票</span>
-                  <span class="btn-select-arrow glyphicon glyphicon-menu-down"></span>
-                  <ul style="display: none;">
-                      <li class="selected">電子發票</li>
-                      <li>三聯式發票</li>
-                  </ul>
-              </a>
+            <div class="col-sm-12 col-lg-12 col-md-12 top-spacing bottom-spacing">
+              <small>訂單備註</small>
+              <div class="form-group">
+                <textarea class="form-control" name="" id=""></textarea>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6 col-lg-6 col-md-6">
-              <a href="cart.html" class="btn btn-default btn-prev">回購物車</a>
-            </div>
-            <div class="col-sm-6 col-lg-6 col-md-6 text-right">
-              <a href="payment-successful.html" class="btn btn-default btn-next">好了，付款去！</a>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-lg-6 col-md-6">
+            <a href="cart.html" class="btn btn-default btn-prev">回購物車</a>
+          </div>
+          <div class="col-sm-6 col-lg-6 col-md-6 text-right">
+            <a href="payment-successful.html" class="btn btn-default btn-next">好了，付款去！</a>
           </div>
         </div>
       </div>
