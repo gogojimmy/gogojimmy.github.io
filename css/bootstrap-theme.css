@@ -1046,6 +1046,9 @@ footer .payment img {
 .order-details .cover .media-object {
   max-width: 50px;
 }
+.text-coupon, .text-vwpoints {
+  display: none;
+}
 .popover-wrap {
   cursor: default;
 }
@@ -1234,8 +1237,8 @@ footer .payment img {
   margin-right: 10px;
   font-size: 18px;
 }
-.title-wallet-thin {
-  background: url("../images/icon-wallet-solid-thin.png") no-repeat;
+.title-pay-solid {
+  background: url("../images/icon-pay-solid.png") no-repeat;
   padding-left: 25px;
   margin-right: 10px;
   font-size: 18px;
