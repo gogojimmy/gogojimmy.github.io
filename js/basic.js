@@ -454,4 +454,15 @@ $( document ).ready(function() {
     $( ".invite-friends-form" ).toggle();
   });
 
+  //折扣方式開合效果
+  $( ".checkbox-coupon" ).click(function(){
+    $( ".text-coupon" ).toggle();
+  });
+
+  //折扣方式開合效果
+  $( ".checkbox-vwpoints" ).click(function(){
+    $( ".text-vwpoints" ).toggle();
+  });
+
+
 });
