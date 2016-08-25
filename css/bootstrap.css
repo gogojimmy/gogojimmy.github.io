@@ -61,6 +61,11 @@ u {
   border-bottom: 1px solid #000;
   text-decoration: none;
 }
+.text-d-violet u {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ee82ee;
+  text-decoration: none;
+}
 a:hover u {
   border-bottom: 1px solid #ee82ee;
 }
@@ -1602,7 +1607,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -1616,7 +1621,7 @@ pre code {
   .container {
     width: 1170px;
   }
-}
+}*/
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -4952,7 +4957,6 @@ a.badge:focus {
   background-color: #fff;
 }
 .product-list .thumbnail {
-  border-bottom: 1px solid #333;
 }
 .thumbnail > img,
 .thumbnail a > img {

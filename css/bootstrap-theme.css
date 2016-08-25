@@ -12,12 +12,15 @@
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
-.text-lato-300 {
+.text-lato-400 {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .text-violet {
   color: #ffccff;
+}
+.text-d-violet {
+  color: #ee82ee;
 }
 .text-green {
   color: #40e0d0;
@@ -150,7 +153,6 @@ header .logo {
   margin-top: 65px;
 }
 .ig-section {
-  border-top: 1px solid #000;
 }
 .ig-list {
   margin-bottom: 30px;
@@ -239,7 +241,8 @@ footer {
   padding: 80px 0px 10px 0px;
 }
 footer h5 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 footer ul {
   list-style-type: none;
@@ -304,8 +307,7 @@ footer .payment img {
 
 /*point section*/
 .point-section {
-  padding: 30px 0px;
-  border-bottom: 1px solid #000;
+  padding: 10px 0px;
 }
 .point-section img {
   width: 100%;
@@ -848,10 +850,9 @@ footer .payment img {
 .stories-page .container {
   padding-bottom: 30px;
 }
-
-/*comment*/
-.comment-wrap {
-  border-bottom: 3px solid #000;
+.related-articles h5 {
+  height: 55px;
+  overflow: hidden;
 }
 
 /*this weeks best*/
