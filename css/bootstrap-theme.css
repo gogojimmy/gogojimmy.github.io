@@ -28,55 +28,58 @@
 .text-red {
   color: #f00;
 }
+.text-grey {
+  color: #888;
+}
 
 /*spacing*/
 .four-spacing {
-  margin: 30px 20px;
+  margin: 30px 20px !important;
 }
 .both-spacing {
-  margin: 30px 0px;
+  margin: 30px 0px !important;
 }
 .top-spacing {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 .bottom-spacing {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .both-spacing-sm {
-  margin: 15px 0px;
+  margin: 15px 0px !important;
 }
 .top-spacing-sm {
-  margin-top: 15px;
+  margin-top: 15px !important;
 }
 .bottom-spacing-sm {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 .both-spacing-xsm {
-  margin: 5px 0px;
+  margin: 5px 0px !important;
 }
 .top-spacing-xsm {
-  margin-top: 5px;
+  margin-top: 5px !important;
 }
 .bottom-spacing-xsm {
-  margin-bottom: 5px;
+  margin-bottom: 5px !important;
 }
 .rl-spacing {
-  margin: 0px 20px;
+  margin: 0px 20px !important;
 }
 .rl-spacing-sm {
-  margin: 0px 10px;
+  margin: 0px 10px !important;
 }
 .left-spacing {
-  margin-left: 20px;
+  margin-left: 20px !important;
 }
 .left-spacing-sm {
-  margin-left: 10px;
+  margin-left: 10px !important;
 }
 .right-spacing {
-  margin-right: 20px;
+  margin-right: 20px !important;
 }
 .right-spacing-sm {
-  margin-right: 10px;
+  margin-right: 10px !important;
 }
 .no-padding {
   padding: 0px !important;
@@ -89,9 +92,6 @@
 }
 .rl-padding {
   padding: 0px 15px !important;
-}
-.both-padding {
-  padding: 15px 0px !important;
 }
 
 /*border style*/
@@ -1064,7 +1064,7 @@ footer .payment img {
   right: -20px !important;
   left: auto;
   bottom: 35px;
-  margin-top: -250px;
+  margin-top: -260px;
 }
 .popover-wrap:hover .popover {
   display: block;
