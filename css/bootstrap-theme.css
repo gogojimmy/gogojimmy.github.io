@@ -1698,6 +1698,8 @@ input[type="radio"] .styled:checked + label::after {
 .btn-select.btn-info ul {
   border: #999 1px solid;
   min-width: 120px !important;
+  max-height: 250px;
+  overflow: auto;
 }
 .btn-select.btn-info .btn-select-value {
   background-color: #fff;
@@ -2352,3 +2354,13 @@ fieldset[disabled] .btn-danger.active {
   line-height: 50px;
   top: 0px;
 }
+
+/*Sweet Alert*/
+.sweet-alert button {
+  background: #000 !important;
+}
+.sweet-alert button:hover {
+  background: #ee82ee !important;
+}
+
+/*notiny*/
