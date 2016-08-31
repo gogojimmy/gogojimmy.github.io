@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8" />
+<title>VIOLET WHITE</title>
+<!-- css -->
+<link rel="StyleSheet" type="text/css" href="css/bootstrap.css" />
+<link rel="StyleSheet" type="text/css" href="css/bootstrap-theme.css" />
+<!-- google font -->
+<link href='https://fonts.googleapis.com/css?family=Arapey:400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+<!-- swiper css -->
+<link rel="StyleSheet" href="css/swiper.min.css" />
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/basic.js"></script>
+<!-- slick gallery css&js -->
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<!--bootstrap validator-->
+<link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<!--notiny-->
+<link rel="stylesheet" type="text/css" href="css/notiny.css">
+<script type="text/javascript" src="js/notiny.js"></script>
+
+</head>
+<body>
+
+<h2>Notiny test</h2>
+<button id="top-right">Top Right</button><button id="top-left">Top Left</button>
+<button id="bottom-right">Bottom Right</button><button id="bottom-right-2">Bottom Right With Image</button>
+<button id="bottom-right-noa">Bottom Right No Animation</button>
+<button id="bottom-right-aw">Bottom Right Auto width</button>
+<button id="fluid-top">Top Notiny with fluid width!</button>
+<button id="fluid-bottom">Bottom Notiny with fluid width!</button>
+<button id="light-theme">Light theme</button>
+<script>
+$(document).ready( function() {
+  var i = 0;
+  $("#bottom-right").click(function(){
+    $.notiny({ text: "Hello world " + i });
+    i++;
+  });
+  $("#bottom-right-2").click(function(){
+    $.notiny({ text: "KEK and veryveryvery long and long and long and long and long text", image: 'http://i2.kym-cdn.com/photos/images/original/000/802/377/ce6.jpg' });
+  });
+  $("#bottom-right-noa").click(function(){
+    $.notiny({ text: "KEK and veryveryvery long and long and long and long and long text", animate: false });
+  });
+  $("#bottom-right-aw").click(function(){
+    $.notiny({ text: "KEK and veryveryvery long and long and long and long and long text", width: '100%', animation_show: 'notiny-animation-show-wtf 0.4s' });
+  });
+  $("#top-right").click(function(){
+    $.notiny({ text: "Top Right", position: 'right-top' });
+  });
+  $("#top-left").click(function(){
+    $.notiny({ text: "Top Left", y: 'top', x: 'left' });
+  });
+  $("#light-theme").click(function(){
+    $.notiny({ text: "Light Theme", theme: "light" });
+  });
+  $('#fluid-top').click(function(){
+    $.notiny({ text: "Top Notiny with fluid width", position: 'fluid-top', animation_hide: 'custom-hide-animation 0.5s forwards' });
+  });
+  $('#fluid-bottom').click(function(){
+    $.notiny({ text: "Bottom Notiny with fluid width", position: 'fluid-bottom' });
+  });
+});
+</script>
+
+</body>
+</html>
