@@ -1179,7 +1179,6 @@ footer .payment img {
 .expand-detail {
   cursor: pointer;
 }
-.points-detail-chart,
 .invite-friends-form {
   display: none;
 }
@@ -2363,4 +2362,25 @@ fieldset[disabled] .btn-danger.active {
   background: #ee82ee !important;
 }
 
-/*notiny*/
+/*edm*/
+.edm-container {
+  /*width: 950px;
+  margin: 0px auto;*/
+}
+.edm-navbar {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+.edm-navbar a {
+  font-size: 18px;
+  margin: 1px 50px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  line-height: 35px;
+}
+.edm-container footer {
+  border-top: none;
+  background: #000;
+  padding-top: 10px;
+  color: #fff;
+}
