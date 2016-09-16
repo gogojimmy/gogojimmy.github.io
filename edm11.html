@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>[ VW 會員驗證] Hi, 只差一步！即刻享有Violet White會員專屬優惠</title>
+    <title>[ VW 點數通知] Hi，您的V-point 已儲值成功!</title>
     <!-- google font -->
     <link href='https://fonts.googleapis.com/css?family=Arapey:400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
@@ -105,8 +105,7 @@ th.columns,
 th.column {
   margin: 0 auto;
   Margin: 0 auto;
-  padding-left: 16px;
-  padding-bottom: 16px; }
+  padding-left: 16px; }
   td.columns .column,
   td.columns .columns,
   td.column .column,
@@ -1378,7 +1377,13 @@ body.outlook p {
       .text-grey {
         color: #888 !important;
       }
-      a.text-grey:hover {
+      .text-white {
+        color: #fff !important;
+      }
+      .text-black {
+        color: #000 !important;
+      }
+      a.text-grey:hover, a.text-black:hover {
         color: #ee82ee !important;
       }
       /*spacing*/
@@ -1476,7 +1481,81 @@ body.outlook p {
       .social-icons .mail:hover {
         background: url("images/icon-mail-violet-lg.png") no-repeat center center;
       }
+      /*table-bg*/
+      .table-bg-img9 {
+        background: url("images/edm-img9.png") no-repeat top center;
+        height: 475px;
+      }
+      .table-bg-img10 {
+        background: url("images/edm-img10.png") no-repeat top center;
+        height: 475px;
+      }
+      .point-table {
+        width: 80% !important;
+        margin: 0px auto;
+      }
+      .point-table th {
+        background: #c6c6c6;
+        color: #fff;
+        padding: 10px;
+        border: 2px solid #fff;
+        text-align: center;
+        font-size: 14px;
+      }
+      .point-table .point-td {
+        background: #ececec;
+        color: #000;
+        padding: 10px;
+        border: 2px solid #fff;
+        text-align: center;
+        font-size: 14px;
+      }
+      .point-table .text-d-violet {
+        font-size: 20px;
+      }
+      .one-third-div {
+        width: 30%;
+      }
+      .half-div {
+        width: 48% !important;
+        float: left;
+        margin-right: 2%;
+      }
+      .half-div2 {
+        width: 48% !important;
+        float: left;
+      }
+      .float-right {
+        float: right;
+      }
+      @media only screen and (max-width: 596px) {
+        .half-div, .half-div2 {
+          width: 100% !important;
+        }
+      }
+      /*btn*/
+      .btn-black-border {
+        color: #000 !important;
+        padding: 11px 30px;
+        border: 2px solid #000;
+        letter-spacing: 3px;
+      }
+      .btn-black-border:hover {
+        color: #ee82ee !important;
+        border: 2px solid #ee82ee;
+      }
+      .btn-white-border {
+        color: #fff !important;
+        padding: 11px 30px;
+        border: 2px solid #fff;
+        letter-spacing: 3px;
+      }
+      .btn-white-border:hover {
+        color: #ee82ee !important;
+        border: 2px solid #ee82ee;
+      }
     </style>
+    <script src="https://use.fontawesome.com/e22605634b.js"></script>
   </head>
 
   <body>
@@ -1564,20 +1643,112 @@ body.outlook p {
                                         <td>
                                           Hi, Tracy
                                           <br>
-                                          <br>歡迎您註冊成為Violet White會員。
-                                          <br>請點選以下連結，開始享有Violet White會員專屬優惠！
-                                          <br><a href="#" class="text-d-violet"><u>click here ></u></a>
-                                          <br>
-                                          <br>
-                                          <br>此信件由系統發出，請勿直接回覆，謝謝您。
-                                          <br>如無法正常連結認證網頁，請洽詢 <a href="mailto:cs@violetwhite.com"><u>cs@violetwhite.com</u></a>。
+                                          <br>您在 Violet White 消費獲得的 V-Points 已經儲值完成! 快到您的會員帳戶確認吧！
+                                          <br>買越多回饋越多，再進來逛逛吧! <a class="text-d-violet" href="shop.html">Click Here</a>
+                                          <br>如果您有任何疑問或不知道有此訂單，請洽詢 <a href="mailto:cs@violetwhite.com"><u>cs@violetwhite.com</u></a>。
                                           <br>
                                           <br>XOXO,
                                           <br>Violet White
                                           <br><br>
                                         </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
                                         <td>
-                                          <img src="images/logo-round.png">
+                                          <table class="point-table">
+                                            <tbody>
+                                              <tr>
+                                                <td>
+                                                  點數明細表格
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th>
+                                                  V-Points 點數通知
+                                                </th>
+                                                <th>
+                                                  檢視點數明細
+                                                </th>
+                                              </tr>
+                                              <tr>
+                                                <td class="point-td">
+                                                  本次獲得 V-Points
+                                                </td>
+                                                <td class="point-td text-d-violet">
+                                                  30
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td class="point-td">
+                                                  您目前擁有 V-Points
+                                                </td>
+                                                <td class="point-td text-d-violet">
+                                                  30
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
+                                        <td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          您在VIOLET WHITE的每筆消費金額都將回饋1%(含稅100元等於1點)的點數。１點相當於１元的價值，可累積至下次訂購時當作現金折抵使用。點數的有效期間為點數贈與當日起算，到翌年的前一天為止。
+                                          <br><span class="text-grey"><small>※ 部分「限期點數」有使用期間的限制。有關於V-Points相關疑問請至What's V-Points確認</small></span>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer">
+                                    <tbody>
+                                      <tr>
+                                        <td height="32px" style="font-size:32px;line-height:32px;">&#xA0;</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer table-bg-img9 half-div">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div>
+                                            <p class="top-spacing text-center">
+                                            <br><br><br><br><br><br><br><br><br><br><br>
+                                            前往Violet White
+                                            <br>上百款飾品任您挑！
+                                            <br><br>
+                                            <a href="shop.html" class="btn btn-black-border text-lato-400">Shop Now</a>
+                                            </p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer table-bg-img10 half-div2">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                          <div>
+                                            <p class="top-spacing text-center text-white">
+                                            <br><br><br><br><br><br><br><br><br><br><br>
+                                            最新優惠活動
+                                            <br>
+                                            <br><br>
+                                            <a href="shop.html" class="btn btn-white-border text-lato-400">Shop Now</a>
+                                            </p>
+                                          </div>
                                         </td>
                                       </tr>
                                     </tbody>

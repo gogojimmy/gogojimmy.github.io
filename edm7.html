@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>[ VW 會員驗證] Hi, 只差一步！即刻享有Violet White會員專屬優惠</title>
+    <title>[ VW 訂單狀態] Hi, THANK YOU FOR YOUR ORDER完成訂單(已付款)</title>
     <!-- google font -->
     <link href='https://fonts.googleapis.com/css?family=Arapey:400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
@@ -105,8 +105,7 @@ th.columns,
 th.column {
   margin: 0 auto;
   Margin: 0 auto;
-  padding-left: 16px;
-  padding-bottom: 16px; }
+  padding-left: 16px; }
   td.columns .column,
   td.columns .columns,
   td.column .column,
@@ -1378,7 +1377,13 @@ body.outlook p {
       .text-grey {
         color: #888 !important;
       }
-      a.text-grey:hover {
+      .text-white {
+        color: #fff !important;
+      }
+      .text-black {
+        color: #000 !important;
+      }
+      a.text-grey:hover, a.text-black:hover {
         color: #ee82ee !important;
       }
       /*spacing*/
@@ -1476,7 +1481,35 @@ body.outlook p {
       .social-icons .mail:hover {
         background: url("images/icon-mail-violet-lg.png") no-repeat center center;
       }
+      /*table-bg*/
+      .table-bg-img5 {
+        background: url("images/edm-img5.png") no-repeat top center;
+        height: 230px;
+      }
+      .one-third-div {
+        width: 30%;
+      }
+      .float-right {
+        float: right;
+      }
+      @media only screen and (max-width: 596px) {
+        .one-third-div {
+          width: 70%;
+        }
+      }
+      /*btn*/
+      .btn-black-border {
+        color: #000 !important;
+        padding: 11px 30px;
+        border: 2px solid #000;
+        letter-spacing: 3px;
+      }
+      .btn-black-border:hover {
+        color: #ee82ee !important;
+        border: 2px solid #ee82ee;
+      }
     </style>
+    <script src="https://use.fontawesome.com/e22605634b.js"></script>
   </head>
 
   <body>
@@ -1564,20 +1597,35 @@ body.outlook p {
                                         <td>
                                           Hi, Tracy
                                           <br>
-                                          <br>歡迎您註冊成為Violet White會員。
-                                          <br>請點選以下連結，開始享有Violet White會員專屬優惠！
-                                          <br><a href="#" class="text-d-violet"><u>click here ></u></a>
+                                          <br>感謝您在Violet White下訂單。您的訂單編號 No.1234567
+                                          <br>
+                                          <br>我們已收到您的款項，我們會在寄出您的商品後，以電子郵件通知您。
+                                          <br>
+                                          <br>如果您已經是會員，訂單完成後您即可收到此訂單回饋至 <a href="my-account.html" class="text-black"><u>My Page</u></a> 的V-Points。
+                                          <br>如果您還不是會員，則請加入 <a href="index.html" class="text-black"><u>Violet White</u></a>，不僅購物可獲得 <a class="text-black" href="my-points.html"><u>V-Points</u> <i class="fa fa-question-circle text-d-violet" aria-hidden="true"></i></a> ，還可享有更多好康。
                                           <br>
                                           <br>
-                                          <br>此信件由系統發出，請勿直接回覆，謝謝您。
-                                          <br>如無法正常連結認證網頁，請洽詢 <a href="mailto:cs@violetwhite.com"><u>cs@violetwhite.com</u></a>。
+                                          <br>如果您有任何疑問或不知道有此訂單，請洽詢 <a href="mailto:cs@violetwhite.com"><u>cs@violetwhite.com</u></a>。
+                                          <br>
                                           <br>
                                           <br>XOXO,
                                           <br>Violet White
                                           <br><br>
                                         </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <table class="spacer table-bg-img5">
+                                    <tbody>
+                                      <tr>
                                         <td>
-                                          <img src="images/logo-round.png">
+                                          <div class="one-third-div float-right top-spacing">
+                                            <p class="top-spacing">前往Violet White
+                                            <br>上百款飾品任您挑！
+                                            <br><br>
+                                            <a href="shop.html" class="btn btn-black-border text-lato-400">Shop Now</a>
+                                            </p>
+                                          </div>
                                         </td>
                                       </tr>
                                     </tbody>
