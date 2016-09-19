@@ -1,4 +1,3 @@
-$( document ).ready(function() {
 (function($) {
   var $notiny, appendToContainer, closeAction, containers, createNotification, defaults, detectCSSFeature, prepareNotification, showAction, themedefaults;
   $notiny = $('<div class="notiny" />').appendTo($('body'));
@@ -14,8 +13,8 @@ $( document ).ready(function() {
     clickhide: true,
     delay: 3000,
     animate: true,
-    animation_show: 'notiny-animation-show 1.5s forwards',
-    animation_hide: 'notiny-animation-hide 2.5s forwards'
+    animation_show: 'notiny-animation-show 0.4s forwards',
+    animation_hide: 'notiny-animation-hide 0.5s forwards'
   };
   themedefaults = {
 
@@ -212,4 +211,32 @@ $( document ).ready(function() {
   });
 })(jQuery);
 
-});
+var i = 0;
+  $("#bottom-right").click(function(){
+    $.notiny({ text: "Hello world " + i });
+    i++;
+  });
+  $("#bottom-right-2").click(function(){
+    $.notiny({ text: "KEK and veryveryvery long and long and long and long and long text", image: 'http://i2.kym-cdn.com/photos/images/original/000/802/377/ce6.jpg' });
+  });
+  $("#bottom-right-noa").click(function(){
+    $.notiny({ text: "KEK and veryveryvery long and long and long and long and long text", animate: false });
+  });
+  $("#bottom-right-aw").click(function(){
+    $.notiny({ text: "KEK and veryveryvery long and long and long and long and long text", width: '100%', animation_show: 'notiny-animation-show-wtf 0.4s' });
+  });
+  $("#top-right").click(function(){
+    $.notiny({ text: "Top Right", position: 'right-top' });
+  });
+  $("#top-left").click(function(){
+    $.notiny({ text: "Top Left", y: 'top', x: 'left' });
+  });
+  $("#light-theme").click(function(){
+    $.notiny({ text: "Light Theme", theme: "light" });
+  });
+  $('#fluid-top').click(function(){
+    $.notiny({ text: "Top Notiny with fluid width", position: 'fluid-top' });
+  });
+  $('#fluid-bottom').click(function(){
+    $.notiny({ text: "Bottom Notiny with fluid width", position: 'fluid-bottom' });
+  });
