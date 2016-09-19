@@ -1488,6 +1488,28 @@ body.outlook p {
         color: #fff !important;
         border: 2px solid #ee82ee;
       }
+      /*wrap*/
+      .edm-tem2-text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .edm-tem2-img {
+        width: 49%;
+        display: inline-block;
+      }
+      @media only screen and (max-width: 596px) {
+        .edm-tem2-text, .edm-tem2-img {
+          width: 100% !important;
+          text-align: center;
+        }
+        .edm-tem2-text {
+          margin-bottom: 50px;
+        }
+        .edm-tem2-text h1 {
+          text-align: center;
+        }
+      }
     </style>
   </head>
 
@@ -1567,17 +1589,19 @@ body.outlook p {
                                     <tbody>
                                       <tr>
                                         <td>
-                                          <br><br>
-                                          <h1 class="text-arapey">New IN</h1>
-                                          我們每月推出超過百款新商品，滿足愛逛的妳，
-                                          <br>在這裏別怕挑不到，就怕買不完!
-                                          <br><br><br>
-                                          <p class="text-center">
-                                          <a href="shop.html" class="btn btn-white btn-block text-lato-400">現 在 逛 逛</a>
-                                          </p>
-                                        </td>
-                                        <td>
-                                          <img src="images/edm-img2.png">
+                                          <div class="edm-tem2-text">
+                                            <br><br>
+                                            <h1 class="text-arapey">New IN</h1>
+                                            我們每月推出超過百款新商品，滿足愛逛的妳，
+                                            <br>在這裏別怕挑不到，就怕買不完!
+                                            <br><br><br>
+                                            <p class="text-center">
+                                            <a href="shop.html" class="btn btn-white btn-block text-lato-400">現 在 逛 逛</a>
+                                            </p>
+                                          </div>
+                                          <div class="edm-tem2-img">
+                                            <img src="images/edm-img2.png">
+                                          </div>
                                         </td>
                                       </tr>
                                     </tbody>
@@ -1589,7 +1613,7 @@ body.outlook p {
                                       </tr>
                                     </tbody>
                                   </table>
-                                  <table class="spacer menu float-center top-spacing">
+                                  <table class="spacer float-center top-spacing">
                                     <tr>
                                       <td class="text-center">
                                         <p class="text-lato-400 text-center">

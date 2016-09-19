@@ -1476,6 +1476,31 @@ body.outlook p {
       .social-icons .mail:hover {
         background: url("images/icon-mail-violet-lg.png") no-repeat center center;
       }
+      /*wrap*/
+      .edm-tem2-text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .edm-tem2-img {
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+      }
+      @media only screen and (max-width: 596px) {
+        .edm-tem2-text, .edm-tem2-img {
+          width: 100% !important;
+        }
+        .edm-tem2-img {
+          text-align: center;
+        }
+        .edm-tem2-text {
+          margin-bottom: 50px;
+        }
+        .edm-tem2-text h1 {
+          text-align: center;
+        }
+      }
     </style>
   </head>
 
@@ -1562,22 +1587,24 @@ body.outlook p {
                                     <tbody>
                                       <tr>
                                         <td>
-                                          Hi, Tracy
-                                          <br>
-                                          <br>歡迎您註冊成為Violet White會員。
-                                          <br>請點選以下連結，開始享有Violet White會員專屬優惠！
-                                          <br><a href="#" class="text-d-violet"><u>click here ></u></a>
-                                          <br>
-                                          <br>
-                                          <br>此信件由系統發出，請勿直接回覆，謝謝您。
-                                          <br>如無法正常連結認證網頁，請洽詢 <a href="mailto:cs@violetwhite.com"><u>cs@violetwhite.com</u></a>。
-                                          <br>
-                                          <br>XOXO,
-                                          <br>Violet White
-                                          <br><br>
-                                        </td>
-                                        <td>
-                                          <img src="images/logo-round.png">
+                                          <div class="edm-tem2-text">
+                                            Hi, Tracy
+                                            <br>
+                                            <br>歡迎您註冊成為Violet White會員。
+                                            <br>請點選以下連結，開始享有Violet White會員專屬優惠！
+                                            <br><a href="#" class="text-d-violet"><u>click here ></u></a>
+                                            <br>
+                                            <br>
+                                            <br>此信件由系統發出，請勿直接回覆，謝謝您。
+                                            <br>如無法正常連結認證網頁，請洽詢 <a href="mailto:cs@violetwhite.com"><u>cs@violetwhite.com</u></a>。
+                                            <br>
+                                            <br>XOXO,
+                                            <br>Violet White
+                                            <br><br>
+                                          </div>
+                                          <div class="edm-tem2-img">
+                                            <img src="images/logo-round.png">
+                                          </div>
                                         </td>
                                       </tr>
                                     </tbody>
@@ -1589,7 +1616,7 @@ body.outlook p {
                                       </tr>
                                     </tbody>
                                   </table>
-                                  <table class="spacer menu float-center top-spacing">
+                                  <table class="spacer float-center top-spacing">
                                     <tr>
                                       <td class="text-center">
                                         <p class="text-lato-400 text-center">
