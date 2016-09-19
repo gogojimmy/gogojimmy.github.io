@@ -680,7 +680,7 @@ footer .payment img {
 }
 .stories1 .text-wrap {
   float: left;
-  width: 40%;
+  width: 25%;
   padding: 10px 15px;
 }
 .stories2 {
@@ -753,7 +753,7 @@ footer .payment img {
   position: absolute;
   right: 50%;
   bottom: 0px;
-  width: 40%;
+  width: 25%;
   padding: 10px 15px;
 }
 .stories1 .triangle, .stories2 .triangle, .stories3 .triangle {
