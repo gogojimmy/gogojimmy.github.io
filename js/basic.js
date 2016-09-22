@@ -464,4 +464,56 @@ $( document ).ready(function() {
     $( ".text-vwpoints" ).toggle();
   });
 
+  //常見問題開合效果
+  $('#qa-content ul').addClass('accordionPart').find('li div:nth-child(1)').addClass('qa-title').hover(function(){
+      $(this).addClass('qa-title-on');
+    }, function(){
+      $(this).removeClass('qa-title-on');
+    }).click(function(){
+      $(this).toggleClass('qa-minus');
+      var $qa_content = $(this).next('div.qa-content');
+      if(!$qa_content.is(':visible')){
+        $('#qaContent ul li div.qa-content:visible').slideUp();
+      }
+      $qa_content.slideToggle();
+    }).siblings().addClass('qa-content').hide();
+
+  //訂閱電子報Dialog
+  $( "#sign-up-edm-dialog" ).dialog({
+    modal: true,
+    width: "50%",
+    autoOpen: false,
+    show: {
+      effect: "fade",
+      duration: 500
+    },
+    hide: {
+      effect: "fade",
+      duration: 500
+    }
+  });
+
+  $( "#sign-up-edm-opener" ).on( "click", function() {
+    $( "#sign-up-edm-dialog" ).dialog( "open" );
+  });
+
+  //Wish list未登入Dialog
+  $( "#wl-notmember-dialog" ).dialog({
+    modal: true,
+    width: "50%",
+    autoOpen: false,
+    show: {
+      effect: "fade",
+      duration: 500
+    },
+    hide: {
+      effect: "fade",
+      duration: 500
+    }
+  });
+
+  $( "#wl-notmember-opener" ).on( "click", function() {
+    $( "#wl-notmember-dialog" ).dialog( "open" );
+  });
+
 });
