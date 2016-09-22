@@ -22,8 +22,43 @@
 <!--bootstrap validator-->
 <link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
 <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<!--jQuery dialog-->
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
 </head>
 <body>
+<div id="sign-up-edm-dialog" title="GET YOUR 2% OFF!">
+  <p>訂閱VIOLET WHITE Stories 最新潮流速報立即獲得8折購物優惠</p>
+  <p class="form-group">
+    <input type="text" placeholder="Email Address" class="form-control input-lg" name="email">
+    <a class="btn btn-block btn-black top-spacing-sm" href="#"><strong>登入 SIGN IN</strong></a>
+  </p>
+</div>
+<div id="wl-notmember-dialog" title="SIGN IN">
+  <p>立即登入會員即可將喜歡的飾品放入心願清單</p>
+  <p class="form-group">
+    <a class="btn btn-block btn-facebook top-spacing-sm" href="my-account.html"><strong><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;以FACEBOOK帳號登入</strong></a>
+  </p>
+  <p>
+    Email Address
+    <p class="form-group">
+      <input type="text" placeholder="Email Address" class="form-control input-lg" name="email">
+    </p>
+  </p>
+  <p>
+    Password
+    <p class="form-group">
+      <input type="password" placeholder="Password" class="form-control input-lg" name="password">
+    </p>
+  </p>
+  <p>
+    <a class="small" href="forget-password.html"><u>忘記密碼</u></a>
+    <a class="btn btn-block btn-black top-spacing-sm" href="my-account.html"><strong>登入 SIGN IN</strong></a>
+  </p>
+  <p class="text-center">
+    <small><a class="text-grey" href="join-signin.html">還不是會員？</a></small>
+  </p>
+</div>
 <div class="index-container">
   <!-- Body Container -->
   <div id="container">
@@ -33,12 +68,13 @@
       <div class="top-bar">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8 col-lg-8 col-md-8">
+            <div class="col-xs-12 col-sm-8 col-lg-8 col-md-8">
               <span class="take-chance text-arapey text-violet"><span>Take a chance on happiness.</span></span>
             </div>
-            <div class="col-sm-4 col-lg-4 col-md-4 sign-fav-cart">
+            <div class="col-xs-12 col-sm-4 col-lg-4 col-md-4 sign-fav-cart">
               <span class="sign-in text-arapey"><a href="join-signin.html">Sign in</a></span>
-              <span class="fav-cart"><a class="nav-fav" href="wish-list.html">0</a><a class="nav-cart" href="cart.html">0</a></span>
+              <span id="sign-up-edm-opener" class="sign-up-edm text-arapey"><a href="#">GET 2% OFF</a></span>
+              <span class="fav-cart"><a id="wl-notmember-opener" class="nav-fav" href="#">0</a><a class="nav-cart" href="cart.html">0</a></span>
             </div>
           </div>
         </div>
