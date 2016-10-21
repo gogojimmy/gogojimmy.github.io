@@ -209,11 +209,11 @@ header .logo {
   cursor: pointer;
 }
 .search-side .search-form {
-  display: inline-table;
+  display: none;
   vertical-align: top;
 }
 .search-side .search-form .form-control {
-  height: 42px;
+  height: 41px;
   border: transparent;
   border-right: 1px solid #000;
   margin-top: 1px;
