@@ -91,7 +91,7 @@ $( document ).ready(function() {
 
   //search click show
   $( ".show-search" ).click(function() {
-    $( ".search-form" ).show( "slide");
+    $( ".search-form" ).css('display', 'inline-table');
   });
 
   //back to top
