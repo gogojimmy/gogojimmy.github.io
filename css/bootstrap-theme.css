@@ -1110,6 +1110,14 @@ footer .input-group-addon {
 .password-wrap {
   display: none;
 }
+.edit-block {
+  position: relative;
+}
+.edit-block .edit-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
 
 /*payment successful*/
 .thank-you {
@@ -1286,6 +1294,24 @@ footer .input-group-addon {
   padding-top: 5px;
   margin-right: 10px;
   font-size: 18px;
+}
+
+/*validate select*/
+.validate-select {
+  -moz-appearance: none;
+  border: 1px solid #999;
+  border-radius: 0;
+  cursor: pointer;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 18px;
+  height: 46px;
+  line-height: 1.33333;
+  padding: 10px 10px;
+}
+.validate-select option {
+  padding: 5px;
 }
 
 /*btn select*/

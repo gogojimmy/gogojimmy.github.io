@@ -6464,9 +6464,6 @@ button.close {
   border: 1px solid #999;
   padding: 20px;
 }
-.edit-block {
-  background: url("../images/icon-pencil-solid.png") no-repeat right top;
-}
 .pull-right {
   float: right !important;
 }
