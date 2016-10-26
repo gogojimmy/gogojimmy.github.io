@@ -1299,8 +1299,12 @@ footer .input-group-addon {
 /*validate select*/
 .validate-select {
   -moz-appearance: none;
+  -webkit-appearance: none;
   border: 1px solid #999;
+  -webkit-border: 1px solid #999;
   border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   cursor: pointer;
   letter-spacing: 0.0625rem;
   margin-bottom: 15px;
