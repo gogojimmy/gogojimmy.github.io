@@ -917,9 +917,10 @@ footer .input-group-addon {
 }
 .this-weeks-best .text {
   width: calc( 50% - 8px);
+  overflow: hidden;
   display: inline-block;
   vertical-align: top;
-  padding: 20px;
+  padding: 20px 20px calc(50% - 25px);
 }
 .this-weeks-best .filter {
   margin: 0px;
