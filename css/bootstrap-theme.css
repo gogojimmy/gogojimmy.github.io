@@ -37,6 +37,18 @@ a.text-grey {
 a.text-grey:hover {
   color: #ee82ee !important;
 }
+.border-red {
+  border: 1px solid red !important;
+}
+.bg-pink {
+  background: #fee5eb;
+}
+.bg-black {
+  background: #000;
+}
+.round {
+  border-radius: 50%;
+}
 
 /*spacing*/
 .four-spacing {
@@ -534,6 +546,26 @@ footer .input-group-addon {
 .product-detail-wrap .btn img {
   float: left;
 }
+.product-detail-wrap .pre-order {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+}
+.product-detail-wrap .pre-order img {
+  max-width: 100%;
+}
+.thumbnail .pre-order {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+}
+.thumbnail .pre-order img {
+  max-width: 100%;
+}
 @media (min-width: 768px) {
   .product-detail-wrap .show-box {
     min-height: 516px;
@@ -605,6 +637,18 @@ footer .input-group-addon {
 }
 .shop-page-container .btn-select {
   width: 80px;
+}
+.form-inline.flex-container .form-group.contain-select select {
+  border: 1px solid #b7b7b7;
+  border-radius: 0;
+  color: #000;
+  letter-spacing: .0625rem;
+  word-spacing: .125rem;
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 @media (min-width: 768px) {
   .recently-viewed .thumbnail .cover {
@@ -1953,6 +1997,18 @@ fieldset[disabled] .btn-danger {
   background-position: 10px center;
 }
 
+/*btn check white green bg*/
+.btn-check-white-green-bg {
+  background-image: url("../images/icon-check-white.png");
+  background-color: #40e0d0;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #fff;
+}
+.btn-check-white-green-bg:hover {
+  color: #fff;
+}
+
 /*btn heart solid*/
 .btn-heart-solid2 {
   background-image: url("../images/icon-heart-solid2.png");
@@ -1961,6 +2017,18 @@ fieldset[disabled] .btn-danger {
 }
 .btn-heart-solid2:hover {
   background-image: url("../images/icon-heart-white2.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+
+/*btn pencil solid*/
+.btn-pencil-solid {
+  background-image: url("../images/icon-pencil-solid.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
+.btn-pencil-solid:hover {
+  background-image: url("../images/icon-pencil-solid-white.png");
   background-repeat: no-repeat;
   background-position: 10px center;
 }
